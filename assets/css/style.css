@@ -70,4 +70,37 @@ input[type="text"],[type="number"] {
   bottom: 5px;
   padding: 15px;
   margin: 10px;
+
+
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: auto;
+  padding: auto;
+  width: 40%;
+  table-layout: center;
+  background-color: #ccc;
+}
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #121212;
+  padding: .35em;
+}
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+  background-color: #262626;
+  color: #ccc;
+}
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
 }
