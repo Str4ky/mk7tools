@@ -17,7 +17,7 @@ function handleFolderSelection(event) {
   const input = document.getElementById('folderInput');
   const selectedFolder = input.files[0];
 
-  const destination = selectedFolder.webkitRelativePath || selectedFolder.name;
+  const destination = selectedFolder.name;
   const filename = 'CTGP-7updates.zip';
   const downloadUrl = 'https://github.com/PabloMK7/CTGP-7updates/archive/master.zip';
 
