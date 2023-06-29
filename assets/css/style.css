@@ -123,25 +123,25 @@ table th {
   text-shadow: -2px -2px 0 #424542, 2px -2px 0 #424542, -2px 2px 0 #424542, 2px 2px 0 #424542;
   font-size: 30px;
   display: inline-block;
-  width: 415px;
+  width: 500px;
 }
 
 #track1 {
   top: 34%;
-  left: 32%;
+  left: 27%;
 }
 
 #track2 {
   top: 47%;
-  left: 32%;
+  left: 27%;
 }
 
 #track3 {
   top: 59%;
-  left: 32%;
+  left: 27%;
 }
 
 #track4 {
   top: 72%;
-  left: 32%;
+  left: 27%;
 }
