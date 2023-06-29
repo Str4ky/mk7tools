@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Kart Tools 7</title>
+    <meta content="Mario Kart Tools 7" property="og:title">
+    <meta content="Tools to help you mod Mario Kart 7/CTGP-7" property="og:description">
+    <meta content="" property="og:url">
+    <meta content="..\assets\img\favicon.png" property="og:image">
+    <meta content="#aa0404" data-react-helmet="true" name="theme-color">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="..\assets\css\style.css">
+    <link rel=icon type=image/png href=..\assets\img\favicon.png />
+</head>
+<body>
+    <br>
+    <center>
+    <h1>To test names of tracks for cups</h1>
+    <br>
+    <input type="text" name="slot1" id="slot1" class="i1" placeholder="First track slot"></input>
+    <br><br>
+    <input type="text" name="slot2" id="slot2" class="i1" placeholder="Second track slot"></input>
+    <br><br>
+    <input type="text" name="slot3" id="slot3" class="i1" placeholder="Third track slot"></input>
+    <br><br>
+    <input type="text" name="slot4" id="slot4" class="i1" placeholder="Fourth track slot"></input>
+    <br><br><br><br>
+    <div class="image-container">
+        <img src="../assets/img/background.png" alt="Background" />
+        <p id="track1" name="track1" class="track"></p>
+        <p id="track2" name="track2" class="track"></p>
+        <p id="track3" name="track3" class="track"></p>
+        <p id="track4" name="track4" class="track"></p>
+    </div>
+    </center>
+    <a href="../" class="button red back"><i class="fa-solid fa-arrow-left"></i></a>
+</body>
+</html>
+
+<script>
+var slot1 = document.getElementById("slot1");
+var slot2 = document.getElementById("slot2");
+var slot3 = document.getElementById("slot3");
+var slot4 = document.getElementById("slot4");
+
+var name1 = document.getElementById("track1");
+var name2 = document.getElementById("track2");
+var name3 = document.getElementById("track3");
+var name4 = document.getElementById("track4");
+
+var track1 = slot1.value;
+var track2 = slot2.value;
+var track3 = slot3.value;
+var track4 = slot4.value;
+
+slot1.addEventListener("input", function() {
+    if (slot1.value !== track1) {
+        name1.innerHTML = slot1.value;
+    }
+    else if (slot1.value === "") {
+        name1.innerHTML = "";
+    }
+});
+
+slot2.addEventListener("input", function() {
+    if (slot2.value !== track2) {
+        name2.innerHTML = slot2.value;
+    }
+    else if (slot2.value === "") {
+        name2.innerHTML = "";
+    }
+});
+
+slot3.addEventListener("input", function() {
+    if (slot3.value !== track3) {
+        name3.innerHTML = slot3.value;
+    }
+    else if (slot3.value === "") {
+        name3.innerHTML = "";
+    }
+});
+
+slot4.addEventListener("input", function() {
+    if (slot4.value !== track4) {
+        name4.innerHTML = slot4.value;
+    }
+    else if (slot4.value === "") {
+        name4.innerHTML = "";
+    }
+});
+</script>
