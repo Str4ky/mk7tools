@@ -18,20 +18,56 @@
     <center>
     <h1>To test the names of the tracks in a cup</h1>
     <br>
+    <select name="console1" id="console1" onchange="change_console1(this);" style="margin-right: 24px;">
+        <option value="">None</option>
+        <option value="SNES">Super Nintendo</option>
+        <option value="GBA">Gameboy Advance</option>
+        <option value="N64">Nintendo 64</option>
+        <option value="GCN">Gamecube</option>
+        <option value="DS">Nintendo DS</option>
+        <option value="Wii">Wii</option>
+    </select>
     <input type="text" name="slot1" id="slot1" class="i1" placeholder="First track slot"></input>
     <br><br>
+    <select name="console2" id="console2" onchange="change_console2(this);" style="margin-right: 24px;">
+        <option value="">None</option>
+        <option value="SNES">Super Nintendo</option>
+        <option value="GBA">Gameboy Advance</option>
+        <option value="N64">Nintendo 64</option>
+        <option value="GCN">Gamecube</option>
+        <option value="DS">Nintendo DS</option>
+        <option value="Wii">Wii</option>
+    </select>
     <input type="text" name="slot2" id="slot2" class="i1" placeholder="Second track slot"></input>
     <br><br>
+    <select name="console3" id="console3" onchange="change_console3(this);" style="margin-right: 24px;">
+        <option value="">None</option>
+        <option value="SNES">Super Nintendo</option>
+        <option value="GBA">Gameboy Advance</option>
+        <option value="N64">Nintendo 64</option>
+        <option value="GCN">Gamecube</option>
+        <option value="DS">Nintendo DS</option>
+        <option value="Wii">Wii</option>
+    </select>
     <input type="text" name="slot3" id="slot3" class="i1" placeholder="Third track slot"></input>
     <br><br>
+    <select name="console4" id="console4" onchange="change_console4(this);" style="margin-right: 24px;">
+        <option value="">None</option>
+        <option value="SNES">Super Nintendo</option>
+        <option value="GBA">Gameboy Advance</option>
+        <option value="N64">Nintendo 64</option>
+        <option value="GCN">Gamecube</option>
+        <option value="DS">Nintendo DS</option>
+        <option value="Wii">Wii</option>
+    </select>
     <input type="text" name="slot4" id="slot4" class="i1" placeholder="Fourth track slot"></input>
     <br><br><br><br>
     <div class="image-container">
         <img src="../assets/img/background.png" alt="Background" style="border-radius: 18px;"/>
-        <p id="track1" name="track1" class="track"></p>
-        <p id="track2" name="track2" class="track"></p>
-        <p id="track3" name="track3" class="track"></p>
-        <p id="track4" name="track4" class="track"></p>
+        <p id="track1" name="track1" class="track"><span class="console" name="subname1" id="subname1"></span></p>
+        <p id="track2" name="track2" class="track"><span class="console" name="subname2" id="subname2"></span></p>
+        <p id="track3" name="track3" class="track"><span class="console" name="subname3" id="subname3"></span></p>
+        <p id="track4" name="track4" class="track"><span class="console" name="subname4" id="subname4"></span></p>
     </div>
     </center>
     <a href="../" class="button red back"><i class="fa-solid fa-arrow-left"></i></a>
@@ -49,6 +85,11 @@ var name2 = document.getElementById("track2");
 var name3 = document.getElementById("track3");
 var name4 = document.getElementById("track4");
 
+var console1 = document.getElementById("console1");
+var console2 = document.getElementById("console2");
+var console3 = document.getElementById("console3");
+var console4 = document.getElementById("console4");
+
 var track1 = slot1.value;
 var track2 = slot2.value;
 var track3 = slot3.value;
@@ -56,37 +97,81 @@ var track4 = slot4.value;
 
 slot1.addEventListener("input", function() {
     if (slot1.value !== track1) {
-        name1.innerHTML = slot1.value;
+        var id1 = document.getElementById("console1");
+        var console1 = id1.options[id1.selectedIndex].value;
+        name1.innerHTML = "<span class='console' id='subname1'>" + console1 + "</span> " + slot1.value;
     }
     else if (slot1.value === "") {
-        name1.innerHTML = "";
+        var id1 = document.getElementById("console1");
+        var console1 = id1.options[id1.selectedIndex].value;
+        name1.innerHTML = "<span class='console' id='subname1'>" + console1 + "</span>";
     }
 });
 
 slot2.addEventListener("input", function() {
     if (slot2.value !== track2) {
-        name2.innerHTML = slot2.value;
+        var id2 = document.getElementById("console2");
+        var console2 = id2.options[id2.selectedIndex].value;
+        name2.innerHTML = "<span class='console' id='subname2'>" + console2 + "</span> " + slot2.value;
     }
     else if (slot2.value === "") {
-        name2.innerHTML = "";
+        var id2 = document.getElementById("console2");
+        var console2 = id2.options[id2.selectedIndex].value;
+        name2.innerHTML = "<span class='console' id='subname2'>" + console2 + "</span>";
     }
 });
 
 slot3.addEventListener("input", function() {
     if (slot3.value !== track3) {
-        name3.innerHTML = slot3.value;
+        var id3 = document.getElementById("console3");
+        var console3 = id3.options[id3.selectedIndex].value;
+        name3.innerHTML = "<span class='console' id='subname3'>" + console3 + "</span> " + slot3.value;
     }
     else if (slot3.value === "") {
-        name3.innerHTML = "";
+        var id3 = document.getElementById("console3");
+        var console3 = id3.options[id3.selectedIndex].value;
+        name3.innerHTML = "<span class='console' id='subname3'>" + console3 + "</span>";
     }
 });
 
 slot4.addEventListener("input", function() {
     if (slot4.value !== track4) {
-        name4.innerHTML = slot4.value;
+        var id4 = document.getElementById("console4");
+        var console4 = id4.options[id4.selectedIndex].value;
+        name4.innerHTML = "<span class='console' id='subname4'>" + console4 + "</span> " + slot4.value;
     }
     else if (slot4.value === "") {
-        name4.innerHTML = "";
+        var id4 = document.getElementById("console4");
+        var console4 = id4.options[id4.selectedIndex].value;
+        name4.innerHTML = "<span class='console' id='subname4'>" + console4 + "</span>";
     }
 });
+
+function change_console1() {
+    var id1 = document.getElementById("console1");
+    var console1 = id1.options[id1.selectedIndex].value;
+    var span = document.getElementById("subname1");
+    span.innerHTML = console1;
+}
+
+  function change_console2() {
+    var id2 = document.getElementById("console2");
+    var console2 = id2.options[id2.selectedIndex].value;
+    var span = document.getElementById("subname2");
+    span.innerHTML = console2;
+}
+
+  function change_console3() {
+    var id3 = document.getElementById("console3");
+    var console3 = id3.options[id3.selectedIndex].value;
+    var span = document.getElementById("subname3");
+    span.innerHTML = console3;
+}
+
+  function change_console4() {
+    var id4 = document.getElementById("console4");
+    var console4 = id4.options[id4.selectedIndex].value;
+    var span = document.getElementById("subname4");
+    span.innerHTML = console4;
+}
 </script>
