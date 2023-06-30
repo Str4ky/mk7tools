@@ -121,27 +121,27 @@ table th {
   text-shadow: -2px -2px 0 #424542, 2px -2px 0 #424542, -2px 2px 0 #424542, 2px 2px 0 #424542;
   font-size: 30px;
   display: inline-block;
-  width: 500px;
+  width: 800px;
 }
 
 #track1 {
   top: 33.5%;
-  left: 27%;
+  left: 3%;
 }
 
 #track2 {
   top: 46.5%;
-  left: 27%;
+  left: 3%;
 }
 
 #track3 {
   top: 59%;
-  left: 27%;
+  left: 3%;
 }
 
 #track4 {
   top: 72%;
-  left: 27%;
+  left: 3%;
 }
 
 .console {
