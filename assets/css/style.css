@@ -45,8 +45,7 @@ a {
 }
 
 select {
-  padding: 12px 24px;
-  text-align: center;
+  padding: 12px;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
