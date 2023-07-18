@@ -123,6 +123,11 @@
 </html>
 
 <script>
+
+function htmlEntities(str) {
+    return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
 var slot1 = document.getElementById("slot1");
 var slot2 = document.getElementById("slot2");
 var slot3 = document.getElementById("slot3");
@@ -146,7 +151,7 @@ var track4 = slot4.value;
 slot1.addEventListener("input", function() {
     if (slot1.value !== track1) {
         var console1 = id1.options[id1.selectedIndex].value;
-        name1.innerHTML = "<span class='console' id='subname1'>" + console1 + "</span> " + slot1.value;
+        name1.innerHTML = "<span class='console' id='subname1'>" + console1 + "</span> " + htmlEntities(slot1.value);
     }
     else if (slot1.value === "") {
         var console1 = id1.options[id1.selectedIndex].value;
@@ -157,7 +162,7 @@ slot1.addEventListener("input", function() {
 slot2.addEventListener("input", function() {
     if (slot2.value !== track2) {
         var console2 = id2.options[id2.selectedIndex].value;
-        name2.innerHTML = "<span class='console' id='subname2'>" + console2 + "</span> " + slot2.value;
+        name2.innerHTML = "<span class='console' id='subname2'>" + console2 + "</span> " + htmlEntities(slot2.value);
     }
     else if (slot2.value === "") {
         var console2 = id2.options[id2.selectedIndex].value;
@@ -168,7 +173,7 @@ slot2.addEventListener("input", function() {
 slot3.addEventListener("input", function() {
     if (slot3.value !== track3) {
         var console3 = id3.options[id3.selectedIndex].value;
-        name3.innerHTML = "<span class='console' id='subname3'>" + console3 + "</span> " + slot3.value;
+        name3.innerHTML = "<span class='console' id='subname3'>" + console3 + "</span> " + htmlEntities(slot3.value);
     }
     else if (slot3.value === "") {
         var console3 = id3.options[id3.selectedIndex].value;
@@ -179,7 +184,7 @@ slot3.addEventListener("input", function() {
 slot4.addEventListener("input", function() {
     if (slot4.value !== track4) {
         var console4 = id4.options[id4.selectedIndex].value;
-        name4.innerHTML = "<span class='console' id='subname4'>" + console4 + "</span> " + slot4.value;
+        name4.innerHTML = "<span class='console' id='subname4'>" + console4 + "</span> " + htmlEntities(slot4.value);
     }
     else if (slot4.value === "") {
         var console4 = id4.options[id4.selectedIndex].value;
