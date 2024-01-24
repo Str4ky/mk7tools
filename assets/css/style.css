@@ -117,7 +117,7 @@ table th {
   font-family: Rodin;
   position: absolute;
   color: white;
-  text-shadow: -2px -2px 0 #484848, 2px -2px 0 #484848, -2px 2px 0 #484848, 2px 2px 0 #484848;
+  text-shadow: -2px -2px 0 #2a2c2a, 2px -2px 0 #2a2c2a, -2px 2px 0 #2a2c2a, 2px 2px 0 #2a2c2a;
   font-size: 30px;
   display: inline-block;
   width: 800px;
@@ -146,6 +146,39 @@ table th {
 .console {
   font-family: Rodin;
   color: white;
-  text-shadow: -2px -2px 0 #424542, 2px -2px 0 #424542, -2px 2px 0 #424542, 2px 2px 0 #424542;
+  text-shadow: -2px -2px 0 #2a2c2a, 2px -2px 0 #2a2c2a, -2px 2px 0 #2a2c2a, 2px 2px 0 #2a2c2a;
   font-size: 18px;
+}
+
+.preview {
+  position: absolute;
+  object-fit: cover;
+  width: 639.5px;
+  height: 165px;
+  top: 1.8%;
+  left: 0.8%;
+}
+
+.select {
+  margin-left: 12px;
+}
+
+.select input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-left: 6px;
+}
+
+.preview_select {
+  opacity: 0;
+  z-index: 1;
+  position: absolute;
+  object-fit: cover;
+  width: 640px;
+  height: 165px;
+  top: 2%;
+  left: 1%;
+}
+
+.background {
+  position: relative;
 }

@@ -16,7 +16,7 @@
 <body>
     <br>
     <center>
-    <h1>To test the names of the tracks in a cup</h1>
+    <h1>To test the UI of the tracks in a cup</h1>
     <br>
     <select name="console1" id="console1" onchange="change_console1(this);" style="margin-right: 24px;">
         <optgroup label="Other">
@@ -40,6 +40,7 @@
         </optgroup>
     </select>
     <input type="text" name="slot1" id="slot1" class="i1" placeholder="First track slot"></input>
+    <span class="select">Track selected? <input type="checkbox" id="select1" name="select1" onclick="select1()"></input></span>
     <br><br>
     <select name="console2" id="console2" onchange="change_console2(this);" style="margin-right: 24px;">
         <optgroup label="Other">
@@ -63,6 +64,7 @@
         </optgroup>
     </select>
     <input type="text" name="slot2" id="slot2" class="i1" placeholder="Second track slot"></input>
+    <span class="select">Track selected? <input type="checkbox" id="select2" name="select2" onclick="select2()"></input></span>
     <br><br>
     <select name="console3" id="console3" onchange="change_console3(this);" style="margin-right: 24px;">
         <optgroup label="Other">
@@ -86,6 +88,7 @@
         </optgroup>
     </select>
     <input type="text" name="slot3" id="slot3" class="i1" placeholder="Third track slot"></input>
+    <span class="select">Track selected? <input type="checkbox" id="select3" name="select3" onclick="select3()"></input></span>
     <br><br>
     <select name="console4" id="console4" onchange="change_console4(this);" style="margin-right: 24px;">
         <optgroup label="Other">
@@ -109,9 +112,13 @@
         </optgroup>
     </select>
     <input type="text" name="slot4" id="slot4" class="i1" placeholder="Fourth track slot"></input>
-    <br><br><br><br>
+    <span class="select">Track selected? <input type="checkbox" id="select4" name="select4" onclick="select4()"></input></span>
+    <br><br>
+    <p>(Click on the image to change the preview)</p>
     <div class="image-container">
-        <img src="../assets/img/background.png" alt="Background" style="border-radius: 18px;"/>
+        <img src="../assets/img/background.png" alt="Background" id="background" class="background"/>
+        <input type="file" accept="image/png, image/jpeg" class="preview_select" onchange="previewImage(this);">
+        <img src="../assets/img/dummy_preview.png" name="preview" id="preview" alt="image" class="preview"/>
         <p id="track1" name="track1" class="track"><span class="console" name="subname1" id="subname1"></span></p>
         <p id="track2" name="track2" class="track"><span class="console" name="subname2" id="subname2"></span></p>
         <p id="track3" name="track3" class="track"><span class="console" name="subname3" id="subname3"></span></p>
@@ -143,10 +150,17 @@ var id2 = document.getElementById("console2");
 var id3 = document.getElementById("console3");
 var id4 = document.getElementById("console4");
 
+var sel1 = document.getElementById("select1");
+var sel2 = document.getElementById("select2");
+var sel3 = document.getElementById("select3");
+var sel4 = document.getElementById("select4");
+
 var track1 = slot1.value;
 var track2 = slot2.value;
 var track3 = slot3.value;
 var track4 = slot4.value;
+
+var background = document.getElementById("background");
 
 slot1.addEventListener("input", function() {
     if (slot1.value !== track1) {
@@ -214,5 +228,82 @@ function change_console1() {
     var console4 = id4.options[id4.selectedIndex].value;
     var span = document.getElementById("subname4");
     span.innerHTML = console4;
+}
+
+function select1() {
+    if (sel1.checked) {
+        sel2.checked = false;
+        sel3.checked = false;
+        sel4.checked = false;
+        background.src = "../assets/img/background_1.png";
+    }
+    else {
+        sel1.checked = false;
+        sel2.checked = false;
+        sel3.checked = false;
+        sel4.checked = false;
+        background.src = "../assets/img/background.png";
+    }
+}
+
+function select2() {
+    if (sel2.checked) {
+        sel1.checked = false;
+        sel3.checked = false;
+        sel4.checked = false;
+        background.src = "../assets/img/background_2.png";
+    }
+    else {
+        sel1.checked = false;
+        sel2.checked = false;
+        sel3.checked = false;
+        sel4.checked = false;
+        background.src = "../assets/img/background.png";
+    }
+}
+
+function select3() {
+    if (sel3.checked) {
+        sel1.checked = false;
+        sel2.checked = false;
+        sel4.checked = false;
+        background.src = "../assets/img/background_3.png";
+    }
+    else {
+        sel1.checked = false;
+        sel2.checked = false;
+        sel3.checked = false;
+        sel4.checked = false;
+        background.src = "../assets/img/background.png";
+    }
+}
+
+function select4() {
+    if (sel4.checked) {
+        sel1.checked = false;
+        sel2.checked = false;
+        sel3.checked = false;
+        background.src = "../assets/img/background_4.png";
+    }
+    else {
+        sel1.checked = false;
+        sel2.checked = false;
+        sel3.checked = false;
+        sel4.checked = false;
+        background.src = "../assets/img/background.png";
+    }
+}
+
+function previewImage(input) {
+    var imageElement = document.getElementById('preview');
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+            imageElement.src = e.target.result;
+        };
+
+        reader.readAsDataURL(input.files[0]);
+    }
 }
 </script>
