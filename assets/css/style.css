@@ -154,7 +154,15 @@ table th {
 .console {
   font-family: Rodin;
   color: white;
-  -webkit-text-stroke: 2px #2a2c2a;
+  text-shadow: 
+  3px 0 0 #2a2c2a, 
+  -3px 0 0 #2a2c2a, 
+  0 3px 0 #2a2c2a, 
+  0 -3px 0 #2a2c2a, 
+  2px 2px #2a2c2a, 
+  -2px -2px 0 #2a2c2a, 
+  2px -2px 0 #2a2c2a, 
+  -2px 2px 0 #2a2c2a;
   font-size: 18px;
 }
 
