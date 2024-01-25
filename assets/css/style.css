@@ -181,4 +181,5 @@ table th {
 
 .background {
   position: relative;
+  border-radius: 10px;
 }
