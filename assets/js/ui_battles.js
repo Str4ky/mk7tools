@@ -211,7 +211,7 @@ function select2() {
         select.disabled = true;
         select.style = "cursor: not-allowed;"
         select.title = "You haven't selected any battle yet"
-        background.src = "../../assets/img/background.png";
+        background.src = "../../assets/img/battles/background.png";
         preview.src = "../../assets/img/battles/dummy_preview.png";
     }
 }
