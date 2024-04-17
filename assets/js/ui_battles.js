@@ -160,12 +160,12 @@ function select1() {
         select.disabled = false;
         select.style = "cursor: pointer;"
         select.title = "Click to select a preview image"
-        background.src = "../../assets/img/battle/background_1.png";
+        background.src = "../../assets/img/battles/background_1.png";
         if(result1 != undefined) {
             preview.src = result1;
         }
         else {
-            preview.src = "../../assets/img/battle/dummy_preview.png";
+            preview.src = "../../assets/img/battles/dummy_preview.png";
         }
     }
     else {
@@ -178,8 +178,8 @@ function select1() {
         select.disabled = true;
         select.style = "cursor: not-allowed;"
         select.title = "You haven't selected any battle yet"
-        background.src = "../../assets/img/battle/background.png";
-        preview.src = "../../assets/img/battle/dummy_preview.png";
+        background.src = "../../assets/img/battles/background.png";
+        preview.src = "../../assets/img/battles/dummy_preview.png";
     }
 }
 
@@ -193,12 +193,12 @@ function select2() {
         select.disabled = false;
         select.style = "cursor: pointer;"
         select.title = "Click to select a preview image"
-        background.src = "../../assets/img/battle/background_2.png";
+        background.src = "../../assets/img/battles/background_2.png";
         if(result2 != undefined) {
             preview.src = result2;
         }
         else {
-            preview.src = "../../assets/img/battle/dummy_preview.png";
+            preview.src = "../../assets/img/battles/dummy_preview.png";
         }
     }
     else {
@@ -212,7 +212,7 @@ function select2() {
         select.style = "cursor: not-allowed;"
         select.title = "You haven't selected any battle yet"
         background.src = "../../assets/img/background.png";
-        preview.src = "../../assets/img/battle/dummy_preview.png";
+        preview.src = "../../assets/img/battles/dummy_preview.png";
     }
 }
 
@@ -226,12 +226,12 @@ function select3() {
         select.disabled = false;
         select.style = "cursor: pointer;"
         select.title = "Click to select a preview image"
-        background.src = "../../assets/img/battle/background_3.png";
+        background.src = "../../assets/img/battles/background_3.png";
         if(result3 != undefined) {
             preview.src = result3;
         }
         else {
-            preview.src = "../../assets/img/battle/dummy_preview.png";
+            preview.src = "../../assets/img/battles/dummy_preview.png";
         }
     }
     else {
@@ -244,8 +244,8 @@ function select3() {
         select.disabled = true;
         select.style = "cursor: not-allowed;"
         select.title = "You haven't selected any battle yet"
-        background.src = "../../assets/img/battle/background.png";
-        preview.src = "../../assets/img/battle/dummy_preview.png";
+        background.src = "../../assets/img/battles/background.png";
+        preview.src = "../../assets/img/battles/dummy_preview.png";
     }
 }
 
@@ -259,12 +259,12 @@ function select4() {
         select.disabled = false;
         select.style = "cursor: pointer;"
         select.title = "Click to select a preview image"
-        background.src = "../../assets/img/battle/background_4.png";
+        background.src = "../../assets/img/battles/background_4.png";
         if(result4 != undefined) {
             preview.src = result4;
         }
         else {
-            preview.src = "../../assets/img/battle/dummy_preview.png";
+            preview.src = "../../assets/img/battles/dummy_preview.png";
         }
     }
     else {
@@ -277,8 +277,8 @@ function select4() {
         select.disabled = true;
         select.style = "cursor: not-allowed;"
         select.title = "You haven't selected any battle yet"
-        background.src = "../../assets/img/battle/background.png";
-        preview.src = "../../assets/img/battle/dummy_preview.png";
+        background.src = "../../assets/img/battles/background.png";
+        preview.src = "../../assets/img/battles/dummy_preview.png";
     }
 }
 
@@ -292,12 +292,12 @@ function select5() {
         select.disabled = false;
         select.style = "cursor: pointer;"
         select.title = "Click to select a preview image"
-        background.src = "../../assets/img/battle/background_5.png";
+        background.src = "../../assets/img/battles/background_5.png";
         if(result5 != undefined) {
             preview.src = result5;
         }
         else {
-            preview.src = "../../assets/img/battle/dummy_preview.png";
+            preview.src = "../../assets/img/battles/dummy_preview.png";
         }
     }
     else {
@@ -310,8 +310,8 @@ function select5() {
         select.disabled = true;
         select.style = "cursor: not-allowed;"
         select.title = "You haven't selected any battle yet"
-        background.src = "../../assets/img/battle/background.png";
-        preview.src = "../../assets/img/battle/dummy_preview.png";
+        background.src = "../../assets/img/battles/background.png";
+        preview.src = "../../assets/img/battles/dummy_preview.png";
     }
 }
 
@@ -325,12 +325,12 @@ function select6() {
         select.disabled = false;
         select.style = "cursor: pointer;"
         select.title = "Click to select a preview image"
-        background.src = "../../assets/img/battle/background_6.png";
+        background.src = "../../assets/img/battles/background_6.png";
         if(result6 != undefined) {
             preview.src = result6;
         }
         else {
-            preview.src = "../../assets/img/battle/dummy_preview.png";
+            preview.src = "../../assets/img/battles/dummy_preview.png";
         }
     }
     else {
@@ -343,8 +343,8 @@ function select6() {
         select.disabled = true;
         select.style = "cursor: not-allowed;"
         select.title = "You haven't selected any battle yet"
-        background.src = "../../assets/img/battle/background.png";
-        preview.src = "../../assets/img/battle/dummy_preview.png";
+        background.src = "../../assets/img/battles/background.png";
+        preview.src = "../../assets/img/battles/dummy_preview.png";
     }
 }
 
