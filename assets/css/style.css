@@ -113,7 +113,7 @@ table th {
   width: 650px;
 }
 
-.track {
+.slot {
   font-family: Rodin;
   position: absolute;
   color: white;
@@ -151,6 +151,36 @@ table th {
   left: 3%;
 }
 
+#battle1 {
+  top: -2.8%;
+  left: 5%;
+}
+
+#battle2 {
+  top: 10.3%;
+  left: 5%;
+}
+
+#battle3 {
+  top: 23.5%;
+  left: 5%;
+}
+
+#battle4 {
+  top: 36.8%;
+  left: 5%;
+}
+
+#battle5 {
+  top: 50%;
+  left: 5%;
+}
+
+#battle6 {
+  top: 63.3%;
+  left: 5%;
+}
+
 .console {
   font-family: Rodin;
   color: white;
@@ -166,7 +196,7 @@ table th {
   font-size: 18px;
 }
 
-.preview {
+.preview_tracks {
   position: absolute;
   object-fit: cover;
   width: 639.5px;
@@ -184,7 +214,11 @@ table th {
   margin-left: 6px;
 }
 
-.preview_select {
+.select input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
+.preview_select_tracks {
   opacity: 0;
   z-index: 1;
   position: absolute;
@@ -198,6 +232,38 @@ table th {
 .background {
   position: relative;
   border-radius: 10px;
+}
+
+.preview_battle {
+  position: absolute;
+  object-fit: cover;
+  width: 185px;
+  height: 366px;
+  top: 4.5%;
+  left: 3.6%;
+}
+
+.preview_select_battle {
+  opacity: 0;
+  z-index: 1;
+  position: absolute;
+  object-fit: cover;
+  width: 185px;
+  height: 366px;
+  top: 2%;
+  left: 1%;
+}
+
+.battle_content {
+  margin-top: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.battle_things {
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .tools {

@@ -10,8 +10,8 @@
     <meta content="https://str4ky.github.io/mk7tools/assets/img/favicon.png" property="og:image">
     <meta content="#aa0404" data-react-helmet="true" name="theme-color">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <link rel="stylesheet" href="..\assets\css\style.css">
-    <link rel=icon type=image/png href=..\assets\img\favicon.png />
+    <link rel="stylesheet" href="..\..\assets\css\style.css">
+    <link rel=icon type=image/png href=..\..\assets\img\favicon.png />
 </head>
 <body>
     <br>
@@ -116,17 +116,17 @@
     <br><br>
     <p>(Click on the image to change the preview)</p>
     <div class="image-container">
-        <img src="../assets/img/background.png" alt="Background" id="background" class="background"/>
-        <input type="file" accept="image/png, image/jpeg" id="select" class="preview_select" onchange="previewImage(this);" title="You haven't selected any track yet" style="cursor: not-allowed;" disabled>
-        <img src="../assets/img/dummy_preview.png" name="preview" id="preview" alt="image" class="preview"/>
-        <p id="track1" name="track1" class="track"><span class="console" name="subname1" id="subname1"></span></p>
-        <p id="track2" name="track2" class="track"><span class="console" name="subname2" id="subname2"></span></p>
-        <p id="track3" name="track3" class="track"><span class="console" name="subname3" id="subname3"></span></p>
-        <p id="track4" name="track4" class="track"><span class="console" name="subname4" id="subname4"></span></p>
+        <img src="../../assets/img/tracks/background.png" alt="Background" id="background" class="background"/>
+        <input type="file" accept="image/png, image/jpeg" id="select" class="preview_select_tracks" onchange="previewImage(this);" title="You haven't selected any track yet" style="cursor: not-allowed;" disabled>
+        <img src="../../assets/img/tracks/dummy_preview.png" name="preview" id="preview" alt="image" class="preview_tracks"/>
+        <p id="track1" name="track1" class="slot"><span class="console" name="subname1" id="subname1"></span></p>
+        <p id="track2" name="track2" class="slot"><span class="console" name="subname2" id="subname2"></span></p>
+        <p id="track3" name="track3" class="slot"><span class="console" name="subname3" id="subname3"></span></p>
+        <p id="track4" name="track4" class="slot"><span class="console" name="subname4" id="subname4"></span></p>
     </div>
     </center>
-    <a href="../" class="button red back"><i class="fa-solid fa-arrow-left"></i></a>
+    <a href="../../" class="button red back"><i class="fa-solid fa-arrow-left"></i></a>
 </body>
 </html>
 
-<script src="../assets/js/ui.js"></script>
+<script src="../../assets/js/ui_tracks.js"></script>

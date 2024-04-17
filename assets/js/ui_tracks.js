@@ -112,12 +112,12 @@ function select1() {
         select.disabled = false;
         select.style = "cursor: pointer;"
         select.title = "Click to select a preview image"
-        background.src = "../assets/img/background_1.png";
+        background.src = "../../assets/img/tracks/background_1.png";
         if(result1 != undefined) {
             preview.src = result1;
         }
         else {
-            preview.src = "../assets/img/dummy_preview.png";
+            preview.src = "../../assets/img/tracks/dummy_preview.png";
         }
     }
     else {
@@ -128,8 +128,8 @@ function select1() {
         select.disabled = true;
         select.style = "cursor: not-allowed;"
         select.title = "You haven't selected any track yet"
-        background.src = "../assets/img/background.png";
-        preview.src = "../assets/img/dummy_preview.png";
+        background.src = "../../assets/img/tracks/background.png";
+        preview.src = "../../assets/img/tracks/dummy_preview.png";
     }
 }
 
@@ -141,12 +141,12 @@ function select2() {
         select.disabled = false;
         select.style = "cursor: pointer;"
         select.title = "Click to select a preview image"
-        background.src = "../assets/img/background_2.png";
+        background.src = "../../assets/img/tracks/background_2.png";
         if(result2 != undefined) {
             preview.src = result2;
         }
         else {
-            preview.src = "../assets/img/dummy_preview.png";
+            preview.src = "../../assets/img/tracks/dummy_preview.png";
         }
     }
     else {
@@ -157,8 +157,8 @@ function select2() {
         select.disabled = true;
         select.style = "cursor: not-allowed;"
         select.title = "You haven't selected any track yet"
-        background.src = "../assets/img/background.png";
-        preview.src = "../assets/img/dummy_preview.png";
+        background.src = "../../assets/img/tracks/background.png";
+        preview.src = "../../assets/img/tracks/dummy_preview.png";
     }
 }
 
@@ -170,12 +170,12 @@ function select3() {
         select.disabled = false;
         select.style = "cursor: pointer;"
         select.title = "Click to select a preview image"
-        background.src = "../assets/img/background_3.png";
+        background.src = "../../assets/img/tracks/background_3.png";
         if(result3 != undefined) {
             preview.src = result3;
         }
         else {
-            preview.src = "../assets/img/dummy_preview.png";
+            preview.src = "../../assets/img/tracks/dummy_preview.png";
         }
     }
     else {
@@ -186,8 +186,8 @@ function select3() {
         select.disabled = true;
         select.style = "cursor: not-allowed;"
         select.title = "You haven't selected any track yet"
-        background.src = "../assets/img/background.png";
-        preview.src = "../assets/img/dummy_preview.png";
+        background.src = "../../assets/img/tracks/background.png";
+        preview.src = "../../assets/img/tracks/dummy_preview.png";
     }
 }
 
@@ -199,12 +199,12 @@ function select4() {
         select.disabled = false;
         select.style = "cursor: pointer;"
         select.title = "Click to select a preview image"
-        background.src = "../assets/img/background_4.png";
+        background.src = "../../assets/img/tracks/background_4.png";
         if(result4 != undefined) {
             preview.src = result4;
         }
         else {
-            preview.src = "../assets/img/dummy_preview.png";
+            preview.src = "../../assets/img/tracks/dummy_preview.png";
         }
     }
     else {
@@ -215,8 +215,8 @@ function select4() {
         select.disabled = true;
         select.style = "cursor: not-allowed;"
         select.title = "You haven't selected any track yet"
-        background.src = "../assets/img/background.png";
-        preview.src = "../assets/img/dummy_preview.png";
+        background.src = "../../assets/img/tracks/background.png";
+        preview.src = "../../assets/img/tracks/dummy_preview.png";
     }
 }
 

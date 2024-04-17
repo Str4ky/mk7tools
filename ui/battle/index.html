@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Kart Tools 7</title>
+    <meta content="Mario Kart Tools 7" property="og:title">
+    <meta content="Tools to help you mod Mario Kart 7/CTGP-7" property="og:description">
+    <meta content="" property="og:url">
+    <meta content="https://str4ky.github.io/mk7tools/assets/img/favicon.png" property="og:image">
+    <meta content="#aa0404" data-react-helmet="true" name="theme-color">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="..\..\assets\css\style.css">
+    <link rel=icon type=image/png href=..\..\assets\img\favicon.png />
+</head>
+<body>
+    <br>
+    <center>
+    <h1>To test the UI of the battles</h1>
+    <br>
+    <div class="battle_content">
+        <div class="battle_things">
+            <select name="console1" id="console1" onchange="change_console1(this);" style="margin-right: 24px;">
+                <optgroup label="Other">
+                    <option value="">None</option>
+                </optgroup>
+                <optgroup label="Consoles that are in Mario Kart 7">
+                    <option value="SNES">Super Nintendo</option>
+                    <option value="GBA">Gameboy Advance</option>
+                    <option value="N64">Nintendo 64</option>
+                    <option value="GCN">Gamecube</option>
+                    <option value="DS">Nintendo DS</option>
+                    <option value="Wii">Wii</option>
+                </optgroup>
+                <optgroup label="Consoles that aren't in Mario Kart 7">
+                    <option value="GP1">Arcade GP 1</option>
+                    <option value="GP2">Arcade GP 2</option>
+                    <option value="GPDX">Arcade GP DX</option>
+                    <option value="Wii U">Wii U</option>
+                    <option value="Switch">Nintendo Switch</option>
+                    <option value="Tour">Smartphones</option>
+                </optgroup>
+            </select>
+            <input type="text" name="slot1" id="slot1" class="i1" placeholder="First battle slot"></input>
+            <span class="select"><input type="checkbox" id="select1" name="select1" onclick="select1()"></input> Battle selected?</span>
+            <br><br>
+            <select name="console2" id="console2" onchange="change_console2(this);" style="margin-right: 24px;">
+                <optgroup label="Other">
+                    <option value="">None</option>
+                </optgroup>
+                <optgroup label="Consoles that are in Mario Kart 7">
+                    <option value="SNES">Super Nintendo</option>
+                    <option value="GBA">Gameboy Advance</option>
+                    <option value="N64">Nintendo 64</option>
+                    <option value="GCN">Gamecube</option>
+                    <option value="DS">Nintendo DS</option>
+                    <option value="Wii">Wii</option>
+                </optgroup>
+                <optgroup label="Consoles that aren't in Mario Kart 7">
+                    <option value="GP1">Arcade GP 1</option>
+                    <option value="GP2">Arcade GP 2</option>
+                    <option value="GPDX">Arcade GP DX</option>
+                    <option value="Wii U">Wii U</option>
+                    <option value="Switch">Nintendo Switch</option>
+                    <option value="Tour">Smartphones</option>
+                </optgroup>
+            </select>
+            <input type="text" name="slot2" id="slot2" class="i1" placeholder="Second battle slot"></input>
+            <span class="select"><input type="checkbox" id="select2" name="select2" onclick="select2()"></input> Battle selected?</span>
+            <br><br>
+            <select name="console3" id="console3" onchange="change_console3(this);" style="margin-right: 24px;">
+                <optgroup label="Other">
+                    <option value="">None</option>
+                </optgroup>
+                <optgroup label="Consoles that are in Mario Kart 7">
+                    <option value="SNES">Super Nintendo</option>
+                    <option value="GBA">Gameboy Advance</option>
+                    <option value="N64">Nintendo 64</option>
+                    <option value="GCN">Gamecube</option>
+                    <option value="DS">Nintendo DS</option>
+                    <option value="Wii">Wii</option>
+                </optgroup>
+                <optgroup label="Consoles that aren't in Mario Kart 7">
+                    <option value="GP1">Arcade GP 1</option>
+                    <option value="GP2">Arcade GP 2</option>
+                    <option value="GPDX">Arcade GP DX</option>
+                    <option value="Wii U">Wii U</option>
+                    <option value="Switch">Nintendo Switch</option>
+                    <option value="Tour">Smartphones</option>
+                </optgroup>
+            </select>
+            <input type="text" name="slot3" id="slot3" class="i1" placeholder="Third battle slot"></input>
+            <span class="select"><input type="checkbox" id="select3" name="select3" onclick="select3()"></input> Battle selected?</span>
+            <br><br>
+            <select name="console4" id="console4" onchange="change_console4(this);" style="margin-right: 24px;">
+                <optgroup label="Other">
+                    <option value="">None</option>
+                </optgroup>
+                <optgroup label="Consoles that are in Mario Kart 7">
+                    <option value="SNES">Super Nintendo</option>
+                    <option value="GBA">Gameboy Advance</option>
+                    <option value="N64">Nintendo 64</option>
+                    <option value="GCN">Gamecube</option>
+                    <option value="DS">Nintendo DS</option>
+                    <option value="Wii">Wii</option>
+                </optgroup>
+                <optgroup label="Consoles that aren't in Mario Kart 7">
+                    <option value="GP1">Arcade GP 1</option>
+                    <option value="GP2">Arcade GP 2</option>
+                    <option value="GPDX">Arcade GP DX</option>
+                    <option value="Wii U">Wii U</option>
+                    <option value="Switch">Nintendo Switch</option>
+                    <option value="Tour">Smartphones</option>
+                </optgroup>
+            </select>
+            <input type="text" name="slot4" id="slot4" class="i1" placeholder="Fourth battle slot"></input>
+            <span class="select"><input type="checkbox" id="select4" name="select4" onclick="select4()"></input> Battle selected?</span>
+            <br><br>
+            <select name="console5" id="console5" onchange="change_console5(this);" style="margin-right: 24px;">
+                <optgroup label="Other">
+                    <option value="">None</option>
+                </optgroup>
+                <optgroup label="Consoles that are in Mario Kart 7">
+                    <option value="SNES">Super Nintendo</option>
+                    <option value="GBA">Gameboy Advance</option>
+                    <option value="N64">Nintendo 64</option>
+                    <option value="GCN">Gamecube</option>
+                    <option value="DS">Nintendo DS</option>
+                    <option value="Wii">Wii</option>
+                </optgroup>
+                <optgroup label="Consoles that aren't in Mario Kart 7">
+                    <option value="GP1">Arcade GP 1</option>
+                    <option value="GP2">Arcade GP 2</option>
+                    <option value="GPDX">Arcade GP DX</option>
+                    <option value="Wii U">Wii U</option>
+                    <option value="Switch">Nintendo Switch</option>
+                    <option value="Tour">Smartphones</option>
+                </optgroup>
+            </select>
+            <input type="text" name="slot5" id="slot5" class="i1" placeholder="Fifth battle slot"></input>
+            <span class="select"><input type="checkbox" id="select5" name="select5" onclick="select5()"></input> Battle selected?</span>
+            <br><br>
+            <select name="console6" id="console6" onchange="change_console6(this);" style="margin-right: 24px;">
+                <optgroup label="Other">
+                    <option value="">None</option>
+                </optgroup>
+                <optgroup label="Consoles that are in Mario Kart 7">
+                    <option value="SNES">Super Nintendo</option>
+                    <option value="GBA">Gameboy Advance</option>
+                    <option value="N64">Nintendo 64</option>
+                    <option value="GCN">Gamecube</option>
+                    <option value="DS">Nintendo DS</option>
+                    <option value="Wii">Wii</option>
+                </optgroup>
+                <optgroup label="Consoles that aren't in Mario Kart 7">
+                    <option value="GP1">Arcade GP 1</option>
+                    <option value="GP2">Arcade GP 2</option>
+                    <option value="GPDX">Arcade GP DX</option>
+                    <option value="Wii U">Wii U</option>
+                    <option value="Switch">Nintendo Switch</option>
+                    <option value="Tour">Smartphones</option>
+                </optgroup>
+            </select>
+            <input type="text" name="slot6" id="slot6" class="i1" placeholder="Sixth battle slot"></input>
+            <span class="select"><input type="checkbox" id="select6" name="select6" onclick="select6()"></input> Battle selected?</span>
+        </div>
+        <div class="battle_things">
+            <p>(Click on the image to change the preview)</p>
+            <div class="image-container">
+                <img src="../../assets/img/battle/background.png" alt="Background" id="background" class="background"/>
+                <input type="file" accept="image/png, image/jpeg" id="select" class="preview_select_battle" onchange="previewImage(this);" title="You haven't selected any battle yet" style="cursor: not-allowed;" disabled>
+                <img src="../../assets/img/battle/dummy_preview.png" name="preview" id="preview" alt="image" class="preview_battle"/>
+                <p id="battle1" name="battle1" class="slot"><span class="console" name="subname1" id="subname1"></span></p>
+                <p id="battle2" name="battle2" class="slot"><span class="console" name="subname2" id="subname2"></span></p>
+                <p id="battle3" name="battle3" class="slot"><span class="console" name="subname3" id="subname3"></span></p>
+                <p id="battle4" name="battle4" class="slot"><span class="console" name="subname4" id="subname4"></span></p>
+                <p id="battle5" name="battle5" class="slot"><span class="console" name="subname5" id="subname5"></span></p>
+                <p id="battle6" name="battle6" class="slot"><span class="console" name="subname6" id="subname6"></span></p>
+            </div>
+        </div>
+    </div>
+    </center>
+    <a href="../../" class="button red back"><i class="fa-solid fa-arrow-left"></i></a>
+</body>
+</html>
+
+<script src="../../assets/js/ui_battle.js"></script>
