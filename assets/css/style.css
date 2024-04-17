@@ -38,7 +38,7 @@ a {
   background-color: #af1919;
 }
 
-.tools {
+.tool-image {
     border-radius: 12px;
     margin: 24px;
     box-shadow: 0px 0px 25px black;
@@ -198,4 +198,54 @@ table th {
 .background {
   position: relative;
   border-radius: 10px;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+
+.tool {
+  background-color: #1b1b1b;
+  padding: 24px;
+  width: 25%;
+  margin-left: 48px;
+  margin-right: 48px;
+  border-radius: 12px;
+}
+
+.tool-infos {
+  display: flex;
+  align-items: start;
+  align-items: center;
+}
+
+.tool-requirements {
+  display: block;
+  text-align: left;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.tool-infos img {
+  margin-right: 20px;
+}
+
+.download {
+  display: block;
+  background-color: #2f8649;
+  width: 50%;
+  padding: 12px;
+  border-radius: 12px;
+  transition: 0.2s;
+}
+
+.download:hover {
+  background-color: #3aa059;
+}
+
+.blank {
+  user-select: none;
 }
