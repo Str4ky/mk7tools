@@ -222,6 +222,14 @@ table th {
   align-items: center;
 }
 
+.tool-names {
+  text-align: left;
+}
+
+.tool-names h4 {
+  margin-top: -8px;
+}
+
 .tool-requirements {
   display: block;
   text-align: left;
