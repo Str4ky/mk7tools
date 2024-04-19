@@ -427,14 +427,14 @@ table th {
   left: 1%;
 }
 
-.battle_content {
+.ui_content {
   margin-top: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.battle_things {
+.ui_things {
   margin-left: 24px;
   margin-right: 24px;
 }
@@ -505,4 +505,18 @@ table th {
   padding: 15px;
   margin: 10px;
   float: right;
+}
+
+#select_lines {
+  margin-top: 36px;
+}
+
+#slot1 {
+  margin-top: 48px;
+}
+
+.lines {
+  position: absolute;
+  top: 0%;
+  left: 0%;
 }

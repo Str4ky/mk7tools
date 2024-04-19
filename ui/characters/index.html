@@ -18,8 +18,8 @@
     <center>
     <h1>To test the UI of the character selection screen</h1>
     <br>
-    <div class="battle_content">
-        <div class="battle_things">
+    <div class="ui_content">
+        <div class="ui_things">
             <input type="text" name="slot1" id="slot1" class="i1" placeholder="First character slot"></input>
             <span class="select"><input type="checkbox" id="select1" name="select1" onclick="select1()"></input> Character selected?</span>
             <br><br>
@@ -42,9 +42,10 @@
             <span class="select"><input type="checkbox" id="select7" name="select7" onclick="select7()"></input> Character selected?</span>
             <br><br>
             <input type="text" name="slot8" id="slot8" class="i1" placeholder="Eighth character slot"></input>
-            <span class="select"><input type="checkbox" id="select8" name="select8" onclick="select8()"></input> Character selected?</span>
+            <span class="select"><input type="checkbox" id="select8" name="select8" onclick="select8()"></input> Character selected?</span><br>
+            <span class="select"><input type="checkbox" id="select_lines" name="select_lines" onclick="select_lines()"></input> Hide orange lines?</span>
         </div>
-        <div class="battle_things">
+        <div class="ui_things">
         <p>(Click on the middle of the garage or the slots to change their preview)</p>
             <div class="image-container">
                 <input type="file" accept="image/png, image/jpeg" id="slot_select1" class="preview_select_slots" onchange="char_slot1(this);" title="Click to select a preview image">
@@ -64,6 +65,7 @@
                 <input type="file" accept="image/png, image/jpeg" id="slot_select8" class="preview_select_slots" onchange="char_slot8(this);" title="Click to select a preview image">
                 <img alt="Slot" id="slot_image8" name="slot_image8" class="preview_slots"/>
                 <img src="../../assets/img/characters/background.png" alt="Background" id="background" class="background"/>
+                <img src="../../assets/img/characters/lines.png" alt="Lines" id="lines" class="lines"/>
                 <input type="file" accept="image/png, image/jpeg" id="select" class="preview_select_characters" onchange="previewImage(this);" title="You haven't selected any character yet" style="cursor: not-allowed;" disabled>
                 <img name="preview" id="preview" class="preview_characters"/>
                 <p id="name" name="name" class="name"></p>

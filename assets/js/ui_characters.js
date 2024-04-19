@@ -53,6 +53,8 @@ let result8;
 var background = document.getElementById("background");
 var preview = document.getElementById('preview');
 var select = document.getElementById("select");
+var lines = document.getElementById("select_lines");
+var lines_img = document.getElementById("lines");
 
 preview.style.opacity = "0";
 
@@ -668,5 +670,14 @@ function char_slot8(input) {
             img8.src = e.target.result;
         };
         reader.readAsDataURL(input.files[0]);
+    }
+}
+
+function select_lines() {
+    if(lines.checked === true) {
+        lines_img.style.display = "none";
+    }
+    else {
+        lines_img.style.display = "block";
     }
 }
