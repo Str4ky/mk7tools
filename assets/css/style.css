@@ -38,6 +38,14 @@ a {
   background-color: #af1919;
 }
 
+.blue {
+  background-color: #1555cc;
+}
+
+.blue:hover {
+  background-color: #1a6acc;
+}
+
 .tool-image {
     border-radius: 12px;
     margin: 24px;
@@ -479,6 +487,7 @@ table th {
   padding: 12px;
   border-radius: 12px;
   transition: 0.2s;
+  text-decoration: none;
 }
 
 .download:hover {
@@ -487,4 +496,13 @@ table th {
 
 .blank {
   user-select: none;
+}
+
+.screenshot {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  padding: 15px;
+  margin: 10px;
+  float: right;
 }
