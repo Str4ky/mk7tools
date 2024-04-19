@@ -301,6 +301,10 @@ table th {
   height: 70px;
 }
 
+.preview_semect_slots:hover {
+  cursor: pointer;
+}
+
 .preview_slots {
   position: absolute;
   object-fit: contain;
