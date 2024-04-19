@@ -285,6 +285,7 @@ table th {
   z-index: 1;
   position: absolute;
   object-fit: contain;
+  object-position: bottom;
   width: 260px;
   height: 180px;
   top: 32%;
