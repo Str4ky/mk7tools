@@ -144,12 +144,6 @@ table th {
   height: 578px;
 }
 
-.screenshot-container {
-  width: 676px;
-  height: 578px;
-  overflow: hidden;
-}
-
 .slot {
   font-family: Rodin;
   position: absolute;
@@ -184,7 +178,7 @@ table th {
   -2px -2px 0 #000000, 
   2px -2px 0 #000000, 
   -2px 2px 0 #000000;
-  font-size: 30px;
+  font-size: 32px;
   display: inline-block;
   width: 800px;
   height: 40px;
@@ -199,7 +193,7 @@ table th {
   background: linear-gradient(0deg, #ff8a39 15%, #f7c7a5 75%);
   -webkit-background-clip: text;
   color: transparent;
-  font-size: 30px;
+  font-size: 32px;
   display: inline-block;
   width: 800px;
   height: 40px;
@@ -314,7 +308,7 @@ table th {
   width: 260px;
   height: 180px;
   top: 32%;
-  left: 30%;
+  left: 31%;
 }
 
 .preview_select_characters {
@@ -326,7 +320,7 @@ table th {
   width: 260px;
   height: 180px;
   top: 32%;
-  left: 30%;
+  left: 31%;
 }
 
 .preview_select_slots {
