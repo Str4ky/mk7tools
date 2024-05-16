@@ -127,7 +127,27 @@ table th {
 .image-container {
   position: relative;
   text-align: center;
-  width: 650px;
+}
+
+.i-t {
+  width: 640px;
+  height: 480px;
+}
+
+.i-b {
+  width: 637px;
+  height: 478px;
+}
+
+.i-c {
+  width: 676px;
+  height: 578px;
+}
+
+.screenshot-container {
+  width: 676px;
+  height: 578px;
+  overflow: hidden;
 }
 
 .slot {
@@ -412,6 +432,7 @@ table th {
 }
 
 .background {
+  object-fit: cover;
   position: relative;
   border-radius: 10px;
 }
@@ -422,7 +443,7 @@ table th {
   width: 185px;
   height: 366px;
   top: 4.5%;
-  left: 3.6%;
+  left: 2.6%;
 }
 
 .preview_select_battle {

@@ -1,6 +1,5 @@
 function screenshot() {
     let container = document.querySelector(".image-container");
-
     let images = container.querySelectorAll('img');
 
     for (let img of images) {
@@ -9,14 +8,9 @@ function screenshot() {
         }
     }
 
-    domtoimage.toPng(container)
-    .then(function (dataUrl) {
-        let link = document.createElement('a');
-        link.download = 'screenshot.png';
-        link.href = dataUrl;
-        link.click();
-    })
-    .catch(function (error) {
-        console.error('oops, something went wrong!', error);
+    domtoimage.toBlob(container)
+        .then(function (blob) {
+            saveAs(blob, 'screenshot.png');
     });
+
 }

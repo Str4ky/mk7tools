@@ -16,7 +16,7 @@
 <body>
     <br>
     <center>
-    <h1>To test the UI of the tracks in a cup</h1>
+    <h1>To test the UI of the tracks in the menu</h1>
     <select name="console1" id="console1" onchange="change_console1(this);" style="margin-right: 24px;">
         <optgroup label="Other">
             <option value="">None</option>
@@ -114,7 +114,7 @@
     <span class="select"><input type="checkbox" id="select4" name="select4" onclick="select4()"></input> Track selected?</span>
     <br><br>
     <p>(Click on the banner to change the preview)</p>
-    <div class="image-container">
+    <div class="image-container i-t">
         <img src="../../assets/img/tracks/background.png" alt="Background" id="background" class="background"/>
         <input type="file" accept="image/png, image/jpeg" id="select" class="preview_select_tracks" onchange="previewImage(this);" title="You haven't selected any track yet" style="cursor: not-allowed;" disabled>
         <img src="../../assets/img/tracks/dummy_preview.png" name="preview" id="preview" alt="image" class="preview_tracks"/>
@@ -131,4 +131,5 @@
 
 <script src="../../assets/js/ui_tracks.js"></script>
 <script src="../../assets/js/screenshot_ui.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image-more/3.3.0/dom-to-image-more.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
