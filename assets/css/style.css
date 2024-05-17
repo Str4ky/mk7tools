@@ -46,6 +46,14 @@ a {
   background-color: #1a6acc;
 }
 
+.green {
+  background-color: #2f8649;
+}
+
+.green:hover {
+  background-color: #3aa059;
+}
+
 .tool-image {
     border-radius: 12px;
     margin: 24px;
@@ -652,6 +660,15 @@ table th {
 .screenshot {
   position: fixed;
   bottom: 5px;
+  right: 5px;
+  padding: 15px;
+  margin: 10px;
+  float: right;
+}
+
+.clipboard {
+  position: fixed;
+  bottom: 65px;
   right: 5px;
   padding: 15px;
   margin: 10px;
