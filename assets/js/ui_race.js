@@ -492,7 +492,6 @@ function select_type() {
         name7.style.left = "19%";
         name8.style.top = "80%";
         name8.style.left = "19%";
-
         img1.style.top = "14.5%";
         img1.style.left = "11%";
         file1.style.top = "14.5%";
