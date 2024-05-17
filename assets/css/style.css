@@ -69,6 +69,18 @@ select {
   border-radius: 12px;
 }
 
+.screen {
+  display: flex;
+  width: 85%;
+  float: left;
+  align-items: center;
+}
+
+.screen-select {
+  width: 80%;
+  margin-left: 6px;
+}
+
 input[type="text"],[type="number"] {
   padding: 12px 32px;
   text-align: center;
@@ -144,6 +156,11 @@ table th {
   height: 578px;
 }
 
+.i-r {
+  width: 637px;
+  height: 478px;
+}
+
 .slot {
   font-family: Rodin;
   position: absolute;
@@ -197,6 +214,54 @@ table th {
   display: inline-block;
   width: 800px;
   height: 40px;
+}
+
+.race {
+  font-family: Rodin;
+  position: absolute;
+  color: black;
+  font-size: 29px;
+  display: inline-block;
+}
+
+#name1 {
+  bottom: 78.5%;
+  left: 14%;
+}
+
+#name2 {
+  top: 8.8%;
+  left: 14%;
+}
+
+#name3 {
+  top: 20.5%;
+  left: 14%;
+}
+
+#name4 {
+  top: 32.3%;
+  left: 14%;
+}
+
+#name5 {
+  top: 44%;
+  left: 14%;
+}
+
+#name6 {
+  top: 55.7%;
+  left: 14%;
+}
+
+#name7 {
+  top: 67.2%;
+  left: 14%;
+}
+
+#name8 {
+  top: 79%;
+  left: 14%;
 }
 
 #track1 {
@@ -345,6 +410,28 @@ table th {
   z-index: 1;
 }
 
+.preview_names {
+  position: absolute;
+  object-fit: contain;
+  object-position: bottom;
+  width: 42px;
+  height: 42px;
+  z-index: 1;
+}
+
+.preview_select_names {
+  opacity: 0;
+  z-index: 2;
+  position: absolute;
+  object-fit: contain;
+  width: 52px;
+  height: 42px;
+}
+
+.preview_select_names:hover {
+  cursor: pointer;
+}
+
 #slot_select1 {
   top: 71%;
   left: 16%;
@@ -423,6 +510,46 @@ table th {
 #slot_image8 {
   top: 85.6%;
   left: 78.5%;
+}
+
+#slot_name1, #slot_race1 {
+  top: 5%;
+  left: 6.5%;
+}
+
+#slot_name2, #slot_race2 {
+  top: 16.5%;
+  left: 6.5%;
+}
+
+#slot_name3, #slot_race3 {
+  top: 28.1%;
+  left: 6.5%;
+}
+
+#slot_name4, #slot_race4 {
+  top: 39.8%;
+  left: 6.5%;
+}
+
+#slot_name5, #slot_race5 {
+  top: 51.5%;
+  left: 6.5%;
+}
+
+#slot_name6, #slot_race6 {
+  top: 63.3%;
+  left: 6.5%;
+}
+
+#slot_name7, #slot_race7 {
+  top: 74.8%;
+  left: 6.5%;
+}
+
+#slot_name8, #slot_race8 {
+  top: 86.5%;
+  left: 6.5%;
 }
 
 .background {

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Kart 7 Tools</title>
+    <meta content="Mario Kart 7 Tools" property="og:title">
+    <meta content="Tools to help you mod Mario Kart 7/CTGP-7" property="og:description">
+    <meta content="" property="og:url">
+    <meta content="https://str4ky.github.io/mk7tools/assets/img/favicon.png" property="og:image">
+    <meta content="#aa0404" data-react-helmet="true" name="theme-color">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="..\..\assets\css\style.css">
+    <link rel=icon type=image/png href=..\..\assets\img\favicon.png />
+</head>
+<body>
+    <br>
+    <center>
+    <h1>To test the UI of characters in the menu</h1>
+    <br>
+    <div class="ui_content">
+        <div class="ui_things">
+            <input type="text" name="slot1" id="slot1" class="i1" placeholder="First character slot"></input>
+            <span class="select"><input type="checkbox" id="select1" name="select1" onclick="select1()"></input> You?</span>
+            <br><br>
+            <input type="text" name="slot2" id="slot2" class="i1" placeholder="Second character slot"></input>
+            <span class="select"><input type="checkbox" id="select2" name="select2" onclick="select2()"></input> You?</span>
+            <br><br>
+            <input type="text" name="slot3" id="slot3" class="i1" placeholder="Third character slot"></input>
+            <span class="select"><input type="checkbox" id="select3" name="select3" onclick="select3()"></input> You?</span>
+            <br><br>
+            <input type="text" name="slot4" id="slot4" class="i1" placeholder="Fourth character slot"></input>
+            <span class="select"><input type="checkbox" id="select4" name="select4" onclick="select4()"></input> You?</span>
+            <br><br>
+            <input type="text" name="slot5" id="slot5" class="i1" placeholder="Fifth character slot"></input>
+            <span class="select"><input type="checkbox" id="select5" name="select5" onclick="select5()"></input> You?</span>
+            <br><br>
+            <input type="text" name="slot6" id="slot6" class="i1" placeholder="Sixth character slot"></input>
+            <span class="select"><input type="checkbox" id="select6" name="select6" onclick="select6()"></input> You?</span>
+            <br><br>
+            <input type="text" name="slot7" id="slot7" class="i1" placeholder="Seventh character slot"></input>
+            <span class="select"><input type="checkbox" id="select7" name="select7" onclick="select7()"></input> You?</span>
+            <br><br>
+            <input type="text" name="slot8" id="slot8" class="i1" placeholder="Eighth character slot"></input>
+            <span class="select"><input type="checkbox" id="select8" name="select8" onclick="select8()"></input> You?</span>
+            <br><br><br>
+            <span class="screen">UI type: 
+                <select id="select" name="select" class="screen-select" onchange="select_type()">
+                    <option value="race">Race screen</option>
+                    <option value="results">Results screen</option>
+                </select>
+            </span>
+        </div>
+        <div class="ui_things">
+        <p>(Click on the area next to the number to change the slots preview)</p>
+            <div class="image-container i-r">
+                <img src="../../assets/img/race/background_race.png" alt="Background" id="background" class="background"/>
+                <input type="file" accept="image/png, image/jpeg" id="slot_race1" class="preview_select_names" onchange="char_slot1(this);" title="Click to select a preview image">
+                <img alt="Slot" id="slot_name1" name="slot_name1" class="preview_names"/>
+                <p id="name1" name="name1" class="race"></p>
+                <input type="file" accept="image/png, image/jpeg" id="slot_race2" class="preview_select_names" onchange="char_slot2(this);" title="Click to select a preview image">
+                <img alt="Slot" id="slot_name2" name="slot_name2" class="preview_names"/>
+                <p id="name2" name="name2" class="race"></p>
+                <input type="file" accept="image/png, image/jpeg" id="slot_race3" class="preview_select_names" onchange="char_slot3(this);" title="Click to select a preview image">
+                <img alt="Slot" id="slot_name3" name="slot_name3" class="preview_names"/>
+                <p id="name3" name="name3" class="race"></p>
+                <input type="file" accept="image/png, image/jpeg" id="slot_race4" class="preview_select_names" onchange="char_slot4(this);" title="Click to select a preview image">
+                <img alt="Slot" id="slot_name4" name="slot_name4" class="preview_names"/>
+                <p id="name4" name="name4" class="race"></p>
+                <input type="file" accept="image/png, image/jpeg" id="slot_race5" class="preview_select_names" onchange="char_slot5(this);" title="Click to select a preview image">
+                <img alt="Slot" id="slot_name5" name="slot_name5" class="preview_names"/>
+                <p id="name5" name="name5" class="race"></p>
+                <input type="file" accept="image/png, image/jpeg" id="slot_race6" class="preview_select_names" onchange="char_slot6(this);" title="Click to select a preview image">
+                <img alt="Slot" id="slot_name6" name="slot_name6" class="preview_names"/>
+                <p id="name6" name="name6" class="race"></p>
+                <input type="file" accept="image/png, image/jpeg" id="slot_race7" class="preview_select_names" onchange="char_slot7(this);" title="Click to select a preview image">
+                <img alt="Slot" id="slot_name7" name="slot_name7" class="preview_names"/>
+                <p id="name7" name="name7" class="race"></p>
+                <input type="file" accept="image/png, image/jpeg" id="slot_race8" class="preview_select_names" onchange="char_slot8(this);" title="Click to select a preview image">
+                <img alt="Slot" id="slot_name8" name="slot_name8" class="preview_names"/>
+                <p id="name8" name="name8" class="race"></p>
+            </div>
+        </div>
+    </div>
+    </center>
+    <a href="../../" class="button red back"><i class="fa-solid fa-arrow-left"></i></a>
+    <a onclick="screenshot()" class="button blue screenshot"><i class="fa-solid fa-camera"></i> Screenshot UI</a>
+</body>
+</html>
+
+<script src="../../assets/js/ui_race.js"></script>
+<script src="../../assets/js/screenshot_ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image-more/3.3.0/dom-to-image-more.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>

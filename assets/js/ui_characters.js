@@ -186,21 +186,7 @@ function select1() {
         }
     }
     else {
-        sel1.checked = false;
-        sel2.checked = false;
-        sel3.checked = false;
-        sel4.checked = false;
-        sel5.checked = false;
-        sel6.checked = false;
-        sel7.checked = false;
-        sel8.checked = false;
-        select.disabled = true;
-        select.style = "cursor: not-allowed;"
-        select.title = "You haven't selected any character yet"
-        nameCharacter.innerText = "";
-        nameCharacterBack.innerText = "";
-        background.src = "../../assets/img/characters/background.png";
-        preview.style.opacity = "0";
+        resetSelection();
     }
 }
 
@@ -235,21 +221,7 @@ function select2() {
         }
     }
     else {
-        sel1.checked = false;
-        sel2.checked = false;
-        sel3.checked = false;
-        sel4.checked = false;
-        sel5.checked = false;
-        sel6.checked = false;
-        sel7.checked = false;
-        sel8.checked = false;
-        select.disabled = true;
-        select.style = "cursor: not-allowed;"
-        select.title = "You haven't selected any character yet"
-        nameCharacter.innerText = "";
-        nameCharacterBack.innerText = "";
-        background.src = "../../assets/img/characters/background.png";
-        preview.style.opacity = "0";
+        resetSelection();
     }
 }
 
@@ -284,21 +256,7 @@ function select3() {
         }
     }
     else {
-        sel1.checked = false;
-        sel2.checked = false;
-        sel3.checked = false;
-        sel4.checked = false;
-        sel5.checked = false;
-        sel6.checked = false;
-        sel7.checked = false;
-        sel8.checked = false;
-        select.disabled = true;
-        select.style = "cursor: not-allowed;"
-        select.title = "You haven't selected any character yet"
-        nameCharacter.innerText = "";
-        nameCharacterBack.innerText = "";
-        background.src = "../../assets/img/characters/background.png";
-        preview.style.opacity = "0";
+        resetSelection();
     }
 }
 
@@ -333,21 +291,7 @@ function select4() {
         }
     }
     else {
-        sel1.checked = false;
-        sel2.checked = false;
-        sel3.checked = false;
-        sel4.checked = false;
-        sel5.checked = false;
-        sel6.checked = false;
-        sel7.checked = false;
-        sel8.checked = false;
-        select.disabled = true;
-        select.style = "cursor: not-allowed;"
-        select.title = "You haven't selected any character yet"
-        nameCharacter.innerText = "";
-        nameCharacterBack.innerText = "";
-        background.src = "../../assets/img/characters/background.png";
-        preview.style.opacity = "0";
+        resetSelection();
     }
 }
 
@@ -382,21 +326,7 @@ function select5() {
         }
     }
     else {
-        sel1.checked = false;
-        sel2.checked = false;
-        sel3.checked = false;
-        sel4.checked = false;
-        sel5.checked = false;
-        sel6.checked = false;
-        sel7.checked = false;
-        sel8.checked = false;
-        select.disabled = true;
-        select.style = "cursor: not-allowed;"
-        select.title = "You haven't selected any character yet"
-        nameCharacter.innerText = "";
-        nameCharacterBack.innerText = "";
-        background.src = "../../assets/img/characters/background.png";
-        preview.style.opacity = "0";
+        resetSelection();
     }
 }
 
@@ -431,21 +361,7 @@ function select6() {
         }
     }
     else {
-        sel1.checked = false;
-        sel2.checked = false;
-        sel3.checked = false;
-        sel4.checked = false;
-        sel5.checked = false;
-        sel6.checked = false;
-        sel7.checked = false;
-        sel8.checked = false;
-        select.disabled = true;
-        select.style = "cursor: not-allowed;"
-        select.title = "You haven't selected any character yet"
-        nameCharacter.innerText = "";
-        nameCharacterBack.innerText = "";
-        background.src = "../../assets/img/characters/background.png";
-        preview.style.opacity = "0";
+        resetSelection();
     }
 }
 
@@ -480,21 +396,7 @@ function select7() {
         }
     }
     else {
-        sel1.checked = false;
-        sel2.checked = false;
-        sel3.checked = false;
-        sel4.checked = false;
-        sel5.checked = false;
-        sel6.checked = false;
-        sel7.checked = false;
-        sel8.checked = false;
-        select.disabled = true;
-        select.style = "cursor: not-allowed;"
-        select.title = "You haven't selected any character yet"
-        nameCharacter.innerText = "";
-        nameCharacterBack.innerText = "";
-        background.src = "../../assets/img/characters/background.png";
-        preview.style.opacity = "0";
+        resetSelection();
     }
 }
 
@@ -529,22 +431,26 @@ function select8() {
         }
     }
     else {
-        sel1.checked = false;
-        sel2.checked = false;
-        sel3.checked = false;
-        sel4.checked = false;
-        sel5.checked = false;
-        sel6.checked = false;
-        sel7.checked = false;
-        sel8.checked = false;
-        select.disabled = true;
-        select.style = "cursor: not-allowed;"
-        select.title = "You haven't selected any character yet"
-        nameCharacter.innerText = "";
-        nameCharacterBack.innerText = "";
-        background.src = "../../assets/img/characters/background.png";
-        preview.style.opacity = "0";
+        resetSelection();
     }
+}
+
+function resetSelection() {
+    sel1.checked = false;
+    sel2.checked = false;
+    sel3.checked = false;
+    sel4.checked = false;
+    sel5.checked = false;
+    sel6.checked = false;
+    sel7.checked = false;
+    sel8.checked = false;
+    select.disabled = true;
+    select.style = "cursor: not-allowed;"
+    select.title = "You haven't selected any character yet"
+    nameCharacter.innerText = "";
+    nameCharacterBack.innerText = "";
+    background.src = "../../assets/img/characters/background.png";
+    preview.style.opacity = "0";
 }
 
 function previewImage(input) {

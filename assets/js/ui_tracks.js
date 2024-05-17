@@ -121,15 +121,7 @@ function select1() {
         }
     }
     else {
-        sel1.checked = false;
-        sel2.checked = false;
-        sel3.checked = false;
-        sel4.checked = false;
-        select.disabled = true;
-        select.style = "cursor: not-allowed;"
-        select.title = "You haven't selected any track yet"
-        background.src = "../../assets/img/tracks/background.png";
-        preview.src = "../../assets/img/tracks/dummy_preview.png";
+        resetSelection();
     }
 }
 
@@ -150,15 +142,7 @@ function select2() {
         }
     }
     else {
-        sel1.checked = false;
-        sel2.checked = false;
-        sel3.checked = false;
-        sel4.checked = false;
-        select.disabled = true;
-        select.style = "cursor: not-allowed;"
-        select.title = "You haven't selected any track yet"
-        background.src = "../../assets/img/tracks/background.png";
-        preview.src = "../../assets/img/tracks/dummy_preview.png";
+        resetSelection();
     }
 }
 
@@ -179,15 +163,7 @@ function select3() {
         }
     }
     else {
-        sel1.checked = false;
-        sel2.checked = false;
-        sel3.checked = false;
-        sel4.checked = false;
-        select.disabled = true;
-        select.style = "cursor: not-allowed;"
-        select.title = "You haven't selected any track yet"
-        background.src = "../../assets/img/tracks/background.png";
-        preview.src = "../../assets/img/tracks/dummy_preview.png";
+        resetSelection();
     }
 }
 
@@ -208,16 +184,20 @@ function select4() {
         }
     }
     else {
-        sel1.checked = false;
-        sel2.checked = false;
-        sel3.checked = false;
-        sel4.checked = false;
-        select.disabled = true;
-        select.style = "cursor: not-allowed;"
-        select.title = "You haven't selected any track yet"
-        background.src = "../../assets/img/tracks/background.png";
-        preview.src = "../../assets/img/tracks/dummy_preview.png";
+        resetSelection();
     }
+}
+
+function resetSelection() {
+    sel1.checked = false;
+    sel2.checked = false;
+    sel3.checked = false;
+    sel4.checked = false;
+    select.disabled = true;
+    select.style = "cursor: not-allowed;"
+    select.title = "You haven't selected any track yet"
+    background.src = "../../assets/img/tracks/background.png";
+    preview.src = "../../assets/img/tracks/dummy_preview.png";
 }
 
 function previewImage(input) {
