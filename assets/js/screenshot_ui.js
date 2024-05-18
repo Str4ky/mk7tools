@@ -9,9 +9,9 @@ function screenshot() {
         }
     }
 
-    clipboard.innerHTML = '<i class="fa-solid fa-check"></i> Done';
+    screenshot.innerHTML = '<i class="fa-solid fa-check"></i> Done';
     setTimeout(() => {
-        clipboard.innerHTML = '<i class="fa-solid fa-camera"></i> Save render';
+        screenshot.innerHTML = '<i class="fa-solid fa-camera"></i> Save render';
     }, 2000);
 
     domtoimage.toBlob(container)
