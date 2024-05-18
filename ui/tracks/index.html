@@ -17,111 +17,117 @@
     <br>
     <center>
     <h1>To test the UI of the tracks in the menu</h1>
-    <select name="console1" id="console1" onchange="change_console1(this);" style="margin-right: 24px;">
-        <optgroup label="Other">
-            <option value="">None</option>
-        </optgroup>
-        <optgroup label="Consoles that are in Mario Kart 7">
-            <option value="SNES">Super Nintendo</option>
-            <option value="GBA">Gameboy Advance</option>
-            <option value="N64">Nintendo 64</option>
-            <option value="GCN">Gamecube</option>
-            <option value="DS">Nintendo DS</option>
-            <option value="Wii">Wii</option>
-        </optgroup>
-        <optgroup label="Consoles that aren't in Mario Kart 7">
-            <option value="GP1">Arcade GP 1</option>
-            <option value="GP2">Arcade GP 2</option>
-            <option value="GPDX">Arcade GP DX</option>
-            <option value="Wii U">Wii U</option>
-            <option value="Switch">Nintendo Switch</option>
-            <option value="Tour">Smartphones</option>
-        </optgroup>
-    </select>
-    <input type="text" name="slot1" id="slot1" class="i1" placeholder="First track slot"></input>
-    <span class="select"><input type="checkbox" id="select1" name="select1" onclick="select1()"></input> Track selected?</span>
-    <br><br>
-    <select name="console2" id="console2" onchange="change_console2(this);" style="margin-right: 24px;">
-        <optgroup label="Other">
-            <option value="">None</option>
-        </optgroup>
-        <optgroup label="Consoles that are in Mario Kart 7">
-            <option value="SNES">Super Nintendo</option>
-            <option value="GBA">Gameboy Advance</option>
-            <option value="N64">Nintendo 64</option>
-            <option value="GCN">Gamecube</option>
-            <option value="DS">Nintendo DS</option>
-            <option value="Wii">Wii</option>
-        </optgroup>
-        <optgroup label="Consoles that aren't in Mario Kart 7">
-            <option value="GP1">Arcade GP 1</option>
-            <option value="GP2">Arcade GP 2</option>
-            <option value="GPDX">Arcade GP DX</option>
-            <option value="Wii U">Wii U</option>
-            <option value="Switch">Nintendo Switch</option>
-            <option value="Tour">Smartphones</option>
-        </optgroup>
-    </select>
-    <input type="text" name="slot2" id="slot2" class="i1" placeholder="Second track slot"></input>
-    <span class="select"><input type="checkbox" id="select2" name="select2" onclick="select2()"></input> Track selected?</span>
-    <br><br>
-    <select name="console3" id="console3" onchange="change_console3(this);" style="margin-right: 24px;">
-        <optgroup label="Other">
-            <option value="">None</option>
-        </optgroup>
-        <optgroup label="Consoles that are in Mario Kart 7">
-            <option value="SNES">Super Nintendo</option>
-            <option value="GBA">Gameboy Advance</option>
-            <option value="N64">Nintendo 64</option>
-            <option value="GCN">Gamecube</option>
-            <option value="DS">Nintendo DS</option>
-            <option value="Wii">Wii</option>
-        </optgroup>
-        <optgroup label="Consoles that aren't in Mario Kart 7">
-            <option value="GP1">Arcade GP 1</option>
-            <option value="GP2">Arcade GP 2</option>
-            <option value="GPDX">Arcade GP DX</option>
-            <option value="Wii U">Wii U</option>
-            <option value="Switch">Nintendo Switch</option>
-            <option value="Tour">Smartphones</option>
-        </optgroup>
-    </select>
-    <input type="text" name="slot3" id="slot3" class="i1" placeholder="Third track slot"></input>
-    <span class="select"><input type="checkbox" id="select3" name="select3" onclick="select3()"></input> Track selected?</span>
-    <br><br>
-    <select name="console4" id="console4" onchange="change_console4(this);" style="margin-right: 24px;">
-        <optgroup label="Other">
-            <option value="">None</option>
-        </optgroup>
-        <optgroup label="Consoles that are in Mario Kart 7">
-            <option value="SNES">Super Nintendo</option>
-            <option value="GBA">Gameboy Advance</option>
-            <option value="N64">Nintendo 64</option>
-            <option value="GCN">Gamecube</option>
-            <option value="DS">Nintendo DS</option>
-            <option value="Wii">Wii</option>
-        </optgroup>
-        <optgroup label="Consoles that aren't in Mario Kart 7">
-            <option value="GP1">Arcade GP 1</option>
-            <option value="GP2">Arcade GP 2</option>
-            <option value="GPDX">Arcade GP DX</option>
-            <option value="Wii U">Wii U</option>
-            <option value="Switch">Nintendo Switch</option>
-            <option value="Tour">Smartphones</option>
-        </optgroup>
-    </select>
-    <input type="text" name="slot4" id="slot4" class="i1" placeholder="Fourth track slot"></input>
-    <span class="select"><input type="checkbox" id="select4" name="select4" onclick="select4()"></input> Track selected?</span>
-    <br><br>
-    <p>(Click on the banner to change the preview)</p>
-    <div class="image-container i-t">
-        <img src="../../assets/img/tracks/background.png" alt="Background" id="background" class="background"/>
-        <input type="file" accept="image/png, image/jpeg" id="select" class="preview_select_tracks" onchange="previewImage(this);" title="You haven't selected any track yet" style="cursor: not-allowed;" disabled>
-        <img src="../../assets/img/tracks/dummy_preview.png" name="preview" id="preview" alt="image" class="preview_tracks"/>
-        <p id="track1" name="track1" class="slot"><span class="console" name="subname1" id="subname1"></span></p>
-        <p id="track2" name="track2" class="slot"><span class="console" name="subname2" id="subname2"></span></p>
-        <p id="track3" name="track3" class="slot"><span class="console" name="subname3" id="subname3"></span></p>
-        <p id="track4" name="track4" class="slot"><span class="console" name="subname4" id="subname4"></span></p>
+    <br>
+    <div class="ui_content">
+        <div class="ui_things">
+            <select name="console1" id="console1" onchange="change_console1(this);" style="margin-right: 24px;">
+                <optgroup label="Other">
+                    <option value="">None</option>
+                </optgroup>
+                <optgroup label="Consoles that are in Mario Kart 7">
+                    <option value="SNES">Super Nintendo</option>
+                    <option value="GBA">Gameboy Advance</option>
+                    <option value="N64">Nintendo 64</option>
+                    <option value="GCN">Gamecube</option>
+                    <option value="DS">Nintendo DS</option>
+                    <option value="Wii">Wii</option>
+                </optgroup>
+                <optgroup label="Consoles that aren't in Mario Kart 7">
+                    <option value="GP1">Arcade GP 1</option>
+                    <option value="GP2">Arcade GP 2</option>
+                    <option value="GPDX">Arcade GP DX</option>
+                    <option value="Wii U">Wii U</option>
+                    <option value="Switch">Nintendo Switch</option>
+                    <option value="Tour">Smartphones</option>
+                </optgroup>
+            </select>
+            <input type="text" name="slot1" id="slot1" class="i1" placeholder="First track slot"></input>
+            <span class="select"><input type="checkbox" id="select1" name="select1" onclick="select1()"></input> Track selected?</span>
+            <br><br>
+            <select name="console2" id="console2" onchange="change_console2(this);" style="margin-right: 24px;">
+                <optgroup label="Other">
+                    <option value="">None</option>
+                </optgroup>
+                <optgroup label="Consoles that are in Mario Kart 7">
+                    <option value="SNES">Super Nintendo</option>
+                    <option value="GBA">Gameboy Advance</option>
+                    <option value="N64">Nintendo 64</option>
+                    <option value="GCN">Gamecube</option>
+                    <option value="DS">Nintendo DS</option>
+                    <option value="Wii">Wii</option>
+                </optgroup>
+                <optgroup label="Consoles that aren't in Mario Kart 7">
+                    <option value="GP1">Arcade GP 1</option>
+                    <option value="GP2">Arcade GP 2</option>
+                    <option value="GPDX">Arcade GP DX</option>
+                    <option value="Wii U">Wii U</option>
+                    <option value="Switch">Nintendo Switch</option>
+                    <option value="Tour">Smartphones</option>
+                </optgroup>
+            </select>
+            <input type="text" name="slot2" id="slot2" class="i1" placeholder="Second track slot"></input>
+            <span class="select"><input type="checkbox" id="select2" name="select2" onclick="select2()"></input> Track selected?</span>
+            <br><br>
+            <select name="console3" id="console3" onchange="change_console3(this);" style="margin-right: 24px;">
+                <optgroup label="Other">
+                    <option value="">None</option>
+                </optgroup>
+                <optgroup label="Consoles that are in Mario Kart 7">
+                    <option value="SNES">Super Nintendo</option>
+                    <option value="GBA">Gameboy Advance</option>
+                    <option value="N64">Nintendo 64</option>
+                    <option value="GCN">Gamecube</option>
+                    <option value="DS">Nintendo DS</option>
+                    <option value="Wii">Wii</option>
+                </optgroup>
+                <optgroup label="Consoles that aren't in Mario Kart 7">
+                    <option value="GP1">Arcade GP 1</option>
+                    <option value="GP2">Arcade GP 2</option>
+                    <option value="GPDX">Arcade GP DX</option>
+                    <option value="Wii U">Wii U</option>
+                    <option value="Switch">Nintendo Switch</option>
+                    <option value="Tour">Smartphones</option>
+                </optgroup>
+            </select>
+            <input type="text" name="slot3" id="slot3" class="i1" placeholder="Third track slot"></input>
+            <span class="select"><input type="checkbox" id="select3" name="select3" onclick="select3()"></input> Track selected?</span>
+            <br><br>
+            <select name="console4" id="console4" onchange="change_console4(this);" style="margin-right: 24px;">
+                <optgroup label="Other">
+                    <option value="">None</option>
+                </optgroup>
+                <optgroup label="Consoles that are in Mario Kart 7">
+                    <option value="SNES">Super Nintendo</option>
+                    <option value="GBA">Gameboy Advance</option>
+                    <option value="N64">Nintendo 64</option>
+                    <option value="GCN">Gamecube</option>
+                    <option value="DS">Nintendo DS</option>
+                    <option value="Wii">Wii</option>
+                </optgroup>
+                <optgroup label="Consoles that aren't in Mario Kart 7">
+                    <option value="GP1">Arcade GP 1</option>
+                    <option value="GP2">Arcade GP 2</option>
+                    <option value="GPDX">Arcade GP DX</option>
+                    <option value="Wii U">Wii U</option>
+                    <option value="Switch">Nintendo Switch</option>
+                    <option value="Tour">Smartphones</option>
+                </optgroup>
+            </select>
+            <input type="text" name="slot4" id="slot4" class="i1" placeholder="Fourth track slot"></input>
+            <span class="select"><input type="checkbox" id="select4" name="select4" onclick="select4()"></input> Track selected?</span>
+        </div>
+        <div class="ui_things">
+            <p>(Click on the banner to change the preview)</p>
+            <div class="image-container i-t">
+                <img src="../../assets/img/tracks/background.png" alt="Background" id="background" class="background"/>
+                <input type="file" accept="image/png, image/jpeg" id="select" class="preview_select_tracks" onchange="previewImage(this);" title="You haven't selected any track yet" style="cursor: not-allowed;" disabled>
+                <img src="../../assets/img/tracks/dummy_preview.png" name="preview" id="preview" alt="image" class="preview_tracks"/>
+                <p id="track1" name="track1" class="slot"><span class="console" name="subname1" id="subname1"></span></p>
+                <p id="track2" name="track2" class="slot"><span class="console" name="subname2" id="subname2"></span></p>
+                <p id="track3" name="track3" class="slot"><span class="console" name="subname3" id="subname3"></span></p>
+                <p id="track4" name="track4" class="slot"><span class="console" name="subname4" id="subname4"></span></p>
+            </div>
+        </div>
     </div>
     </center>
     <a href="../../" class="button red back"><i class="fa-solid fa-arrow-left"></i></a>
