@@ -1,5 +1,6 @@
 function screenshot() {
     let container = document.querySelector(".image-container");
+    let screenshot = document.getElementById("screenshot");
     let images = container.querySelectorAll('img');
 
     for (let img of images) {
@@ -7,6 +8,11 @@ function screenshot() {
             img.src = '../../assets/img/blank.png';
         }
     }
+
+    clipboard.innerHTML = '<i class="fa-solid fa-check"></i> Done';
+    setTimeout(() => {
+        clipboard.innerHTML = '<i class="fa-solid fa-camera"></i> Save render';
+    }, 2000);
 
     domtoimage.toBlob(container)
         .then(function (blob) {
