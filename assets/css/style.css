@@ -206,7 +206,7 @@ table th {
   font-size: 32px;
   display: inline-block;
   width: 800px;
-  height: 40px;
+  height: 48px;
 }
 
 .name_back {
@@ -221,7 +221,7 @@ table th {
   font-size: 32px;
   display: inline-block;
   width: 800px;
-  height: 40px;
+  height: 48px;
 }
 
 .race {
@@ -323,7 +323,7 @@ table th {
 }
 
 #name, #name_back {
-  top: 51%;
+  top: 49%;
   left: 1%;
 }
 
