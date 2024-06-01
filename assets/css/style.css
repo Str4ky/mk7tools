@@ -193,7 +193,7 @@ table th {
   display: flex;
   align-content: center;
   text-align: left;
-  color: #f7c7a5;
+  color: #fcd4b7;
   text-shadow: 
   3px 0 0 #000000, 
   -3px 0 0 #000000, 
@@ -215,14 +215,14 @@ table th {
   display: flex;
   align-content: center;
   text-align: left;
-  background: linear-gradient(0deg, #db7227 15%, #f7c7a5 65%);
+  background: linear-gradient(0deg, #d36c23 25%, #fcd4b7 75%);
   -webkit-background-clip: text;
   color: transparent;
   font-size: 32px;
   display: inline-block;
   width: 800px;
   height: 48px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 .race {
