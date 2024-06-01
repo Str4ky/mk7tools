@@ -203,10 +203,11 @@ table th {
   -2px -2px 0 #000000, 
   2px -2px 0 #000000, 
   -2px 2px 0 #000000;
-  font-size: 32px;
+  font-size: 33px;
   display: inline-block;
   width: 800px;
   height: 48px;
+  padding-left: 10px;
 }
 
 .name_back {
@@ -218,10 +219,11 @@ table th {
   background: linear-gradient(0deg, #d36c23 25%, #fcd4b7 75%);
   -webkit-background-clip: text;
   color: transparent;
-  font-size: 32px;
+  font-size: 33px;
   display: inline-block;
   width: 800px;
   height: 48px;
+  padding-left: 10px;
   padding-bottom: 10px;
 }
 
@@ -324,8 +326,8 @@ table th {
 }
 
 #name, #name_back {
-  top: 48.6%;
-  left: 1%;
+  top: 48.3%;
+  left: -1%;
 }
 
 .console {
