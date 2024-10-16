@@ -30,11 +30,11 @@ function action() {
     const button = document.getElementById("button");
 
     if (action === "hash") {
-        title.innerText = "Input names";
+        title.innerHTML = "<u>Input names</u>:";
         input.placeholder = "Input... (example driver.bcmdl)";
         button.innerHTML = `<i class="fa-solid fa-arrows-rotate"></i> Convert names`;
     } else if (action === "unhash") {
-        title.innerText = "Input hashes";
+        title.innerHTML = "<u>Input hashes</u>:";
         input.placeholder = "Input... (example 0xAD517B20)";
         button.innerHTML = `<i class="fa-solid fa-arrows-rotate"></i> Convert hashes`;
     }
