@@ -63,7 +63,7 @@ function convert() {
             if (foundName) {
                 output.value = foundName;
             } else {
-                output.value = 'The hashes aren\'t in the list yet';
+                output.value = 'These hashes aren\'t in the list yet';
             }
         });
     }
