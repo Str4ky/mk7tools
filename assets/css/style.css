@@ -360,7 +360,7 @@ table th {
   width: 639.5px;
   height: 165px;
   top: 1.8%;
-  left: 0.8%;
+  left: 0%;
 }
 
 .select {
@@ -384,7 +384,7 @@ table th {
   width: 640px;
   height: 165px;
   top: 2%;
-  left: 1%;
+  left: 0%;
 }
 
 .preview_characters {
@@ -594,8 +594,8 @@ table th {
   object-fit: cover;
   width: 185px;
   height: 366px;
-  top: 2%;
-  left: 1%;
+  top: 4.5%;
+  left: 2.5%;
 }
 
 .ui_content {
