@@ -193,6 +193,7 @@ table th {
   font-size: 30px;
   display: inline-block;
   width: 800px;
+  letter-spacing: 1px;
 }
 
 .name {
