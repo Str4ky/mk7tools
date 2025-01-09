@@ -613,7 +613,7 @@ table th {
 .tools {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   position: relative;
 }
 
@@ -621,8 +621,6 @@ table th {
   background-color: #1b1b1b;
   padding: 24px;
   width: 25%;
-  margin-left: 48px;
-  margin-right: 48px;
   border-radius: 12px;
 }
 
