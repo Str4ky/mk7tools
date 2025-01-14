@@ -69,3 +69,9 @@ li.folder-root.open>ul{
    display:block;
    max-height:50000px;
 }
+
+@media screen and (max-width: 600px) {
+    .file-list, .file-list ul{
+        width: 100%;
+    }
+}

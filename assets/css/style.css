@@ -17,6 +17,14 @@ a {
   color: white;
 }
 
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  text-align: center;
+}
+
 .button {
   border: none;
   color: white;
@@ -107,11 +115,11 @@ textarea {
 }
 
 .i1 {
-  width: 300px;
+  width: 250px;
 }
 
 .i2 {
-  width: 500px;
+  width: 250px;
 }
 
 .back {
@@ -126,7 +134,7 @@ table {
   border-collapse: collapse;
   margin: auto;
   padding: auto;
-  width: 40%;
+  width: 400px;
   table-layout: center;
   background-color: #ccc;
 }
@@ -697,4 +705,21 @@ table th {
   position: absolute;
   top: 0%;
   left: 0%;
+}
+
+@media screen and (max-width: 1024px) {
+  .ui_content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .tool-image {
+    width: 75%;
+  }
 }
