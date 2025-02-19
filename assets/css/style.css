@@ -824,10 +824,56 @@ progress::-moz-progress-bar {
   border-radius: 0px;
 }
 
+#select-buttons {
+  display: flex;
+  gap: 64px;
+}
+
+#wheel {
+  width: 600px;
+}
+
+@media screen and (max-width: 1400px) {
+  .progress-container {
+    width: 200px;
+  }
+
+  #infos-container h2 {
+    font-size: 18px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .ui_content {
     display: flex;
     flex-direction: column;
+  }
+
+  #calculator-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #infos-container {
+    flex-direction: column;
+  }
+
+  #calculator-container {
+    margin-bottom: 48px;
+  }
+
+  .progress-container {
+    width: 250px;
+  }
+
+  #select-container {
+    zoom: 0.6;
+  }
+
+  #select-buttons {
+    zoom: 0.8;
+    gap: 32px;
   }
 }
 
@@ -838,5 +884,14 @@ progress::-moz-progress-bar {
 
   .tool-image {
     width: 75%;
+  }
+
+  #select-container {
+    zoom: 0.5;
+  }
+
+  #select-buttons {
+    zoom: 0.7;
+    gap: 32px;
   }
 }

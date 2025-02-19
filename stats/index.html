@@ -20,22 +20,22 @@
     <h1 class="title">Mario Kart 7 Stats Calculator</h1>
     <div id="calculator-container">
         <div id="stats-container">
-            <div style="display: flex; gap: 64px;">
+            <div id="select-buttons">
                 <a class="button red" onclick="changeStat('up', 'character')"><i class="fa-solid fa-arrow-up"></i></a>
                 <a class="button red" onclick="changeStat('up', 'kart')"><i class="fa-solid fa-arrow-up"></i></a>
                 <a class="button red" onclick="changeStat('up', 'wheels')"><i class="fa-solid fa-arrow-up"></i></a>
                 <a class="button red" onclick="changeStat('up', 'glider')"><i class="fa-solid fa-arrow-up"></i></a>
             </div>
-            <div>
+            <div id="select-container">
                 <div style="position: relative;">
                     <img src="../assets/img/char/mario.png" id="character-img" width="100" style="position: absolute; left: 30px; top: 75px;">
                     <img src="../assets/img/kart/standard.png" id="kart-img" width="150" style="position: absolute; left: 155px; top: 100px;">
-                    <img src="../assets/img/tire/standard.png" id="wheels-img" width="150" style="position: absolute; left: 290px; top: 100px;">
+                    <img src="../assets/img/tire/standard.png" id="wheels-img" width="150" style="position: absolute; left: 295px; top: 100px;">
                     <img src="../assets/img/wing/standard.png" id="glider-img" width="150" style="position: absolute; left: 435px; top: 100px;">
                 </div>
-                <img src="../assets/img/stats/wheel.png" id="wheel" width="600">
+                <img src="../assets/img/stats/wheel.png" id="wheel">
             </div>
-            <div style="display: flex; gap: 64px;">
+            <div id="select-buttons">
                 <a class="button red" onclick="changeStat('down', 'character')"><i class="fa-solid fa-arrow-down"></i></a>
                 <a class="button red" onclick="changeStat('down', 'kart')"><i class="fa-solid fa-arrow-down"></i></a>
                 <a class="button red" onclick="changeStat('down', 'wheels')"><i class="fa-solid fa-arrow-down"></i></a>
