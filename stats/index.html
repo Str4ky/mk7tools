@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mario Kart 7 Tools</title>
+<meta content="Mario Kart 7 Tools" property="og:title">
+<meta content="Tools to help you mod Mario Kart 7/CTGP-7" property="og:description">
+<meta content="" property="og:url">
+<meta content="https://str4ky.github.io/mk7tools/assets/img/favicon.png" property="og:image">
+<meta content="#aa0404" data-react-helmet="true" name="theme-color">
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<link href="..\assets\css\style.css" rel="stylesheet" type="text/css">
+<link rel=icon type=image/png href=..\assets\img\favicon.png />
+</head>
+<body>
+    <br><br>
+    <h1 class="title">Mario Kart 7 Stats Calculator</h1>
+    <div id="calculator-container">
+        <div id="stats-container">
+            <div style="display: flex; gap: 64px;">
+                <a class="button red" onclick="changeStat('up', 'character')"><i class="fa-solid fa-arrow-up"></i></a>
+                <a class="button red" onclick="changeStat('up', 'kart')"><i class="fa-solid fa-arrow-up"></i></a>
+                <a class="button red" onclick="changeStat('up', 'wheels')"><i class="fa-solid fa-arrow-up"></i></a>
+                <a class="button red" onclick="changeStat('up', 'glider')"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+            <div>
+                <div style="position: relative;">
+                    <img src="../assets/img/char/mario.png" id="character-img" width="100" style="position: absolute; left: 30px; top: 75px;">
+                    <img src="../assets/img/kart/standard.png" id="kart-img" width="150" style="position: absolute; left: 155px; top: 100px;">
+                    <img src="../assets/img/tire/standard.png" id="wheels-img" width="150" style="position: absolute; left: 290px; top: 100px;">
+                    <img src="../assets/img/wing/standard.png" id="glider-img" width="150" style="position: absolute; left: 435px; top: 100px;">
+                </div>
+                <img src="../assets/img/stats/wheel.png" id="wheel" width="600">
+            </div>
+            <div style="display: flex; gap: 64px;">
+                <a class="button red" onclick="changeStat('down', 'character')"><i class="fa-solid fa-arrow-down"></i></a>
+                <a class="button red" onclick="changeStat('down', 'kart')"><i class="fa-solid fa-arrow-down"></i></a>
+                <a class="button red" onclick="changeStat('down', 'wheels')"><i class="fa-solid fa-arrow-down"></i></a>
+                <a class="button red" onclick="changeStat('down', 'glider')"><i class="fa-solid fa-arrow-down"></i></a>
+            </div>
+            <input type="hidden" id="selected-character" value="0" placeholder="Character...">
+            <input type="hidden" id="selected-kart" value="0" placeholder="Kart...">
+            <input type="hidden" id="selected-wheels" value="0" placeholder="Tire...">
+            <input type="hidden" id="selected-glider" value="0" placeholder="Wing...">
+        </div>
+        <div id="stats-container">
+            <div id="infos-container">
+                <div id="stats-group">
+                    <div id="stats">
+                        <h2>Gound Speed</h2>
+                        <div class="progress-container">
+                            <progress id="landSpeed" value="3.5" max="6"></progress>
+                            <div class="progress-steps">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="stats">
+                        <h2>Underwater Speed</h2>
+                        <div class="progress-container">
+                            <progress id="waterSpeed" value="2.75" max="6"></progress>
+                            <div class="progress-steps">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="stats">
+                        <h2>Flying Speed</h2>
+                        <div class="progress-container">
+                            <progress id="airSpeed" value="4" max="6"></progress>
+                            <div class="progress-steps">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="stats">
+                        <h2>Acceleration</h2>
+                        <div class="progress-container">
+                            <progress id="acceleration" value="3" max="6"></progress>
+                            <div class="progress-steps">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="stats">
+                        <h2>Weight</h2>
+                        <div class="progress-container">
+                            <progress id="weight" value="3.25" max="6"></progress>
+                            <div class="progress-steps">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="stats">
+                        <h2>Ground Handling</h2>
+                        <div class="progress-container">
+                            <progress id="landHandling" value="2.75" max="6"></progress>
+                            <div class="progress-steps">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="stats-group">
+                    <div id="stats">
+                        <h2>Underwater Handling</h2>
+                        <div class="progress-container">
+                            <progress id="waterHandling" value="2.25" max="6"></progress>
+                            <div class="progress-steps">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="stats">
+                        <h2>Flying Handling</h2>
+                        <div class="progress-container">
+                            <progress id="airHandling" value="2" max="6"></progress>
+                            <div class="progress-steps">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="stats">
+                        <h2>Off-Road</h2>
+                        <div class="progress-container">
+                            <progress id="off-road" value="3.75" max="6"></progress>
+                            <div class="progress-steps">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="stats">
+                        <h2>Mini turbo</h2>
+                        <div class="progress-container">
+                            <progress id="mini-turbo" value="2.5" max="6"></progress>
+                            <div class="progress-steps">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="stats">
+                        <h2>Stability</h2>
+                        <div class="progress-container">
+                            <progress id="stability" value="1.75" max="6"></progress>
+                            <div class="progress-steps">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="stats">
+                        <h2>Drift</h2>
+                        <div class="progress-container">
+                            <progress id="drift" value="3.25" max="6"></progress>
+                            <div class="progress-steps">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="../" class="button red back"><i class="fa-solid fa-arrow-left"></i></a>
+</body>
+
+<script src="../assets/js/stats.js"></script>
+
+</html>
