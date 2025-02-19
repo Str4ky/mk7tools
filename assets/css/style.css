@@ -722,7 +722,7 @@ table th {
   margin-top: 48px;
   width: 100%;
   text-align: left;
-  gap: 40px;
+  gap: 24px;
 }
 
 #wheel {
@@ -744,7 +744,7 @@ table th {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 48px;
 }
 
 #infos-container h2 {
