@@ -121,6 +121,20 @@ function changeStat(action, slot) {
                   }
             }
             tempChar.value = String(characterID);
+
+            tempNextChar = parseInt(tempChar.value) + 1;
+            tempPreviousChar = parseInt(tempChar.value) - 1;
+
+            if (tempNextChar >= characters.length) {
+                  tempNextChar = 0;
+            }
+
+            if (tempPreviousChar < 0) {
+                  tempPreviousChar = characters.length - 1;
+            }
+
+            document.getElementById("character-img-previous").src = characters[tempPreviousChar].img;
+            document.getElementById("character-img-next").src = characters[tempNextChar].img;
             document.getElementById("character-img").src = characters[tempChar.value].img;
       }
 
@@ -141,6 +155,20 @@ function changeStat(action, slot) {
                   }
             }
             tempKart.value = String(kartID);
+
+            tempNextKart = parseInt(tempKart.value) + 1;
+            tempPreviousKart = parseInt(tempKart.value) - 1;
+
+            if (tempNextKart >= karts.length) {
+                  tempNextKart = 0;
+            }
+
+            if (tempPreviousKart < 0) {
+                  tempPreviousKart = karts.length - 1;
+            }
+
+            document.getElementById("kart-img-previous").src = karts[tempPreviousKart].img;
+            document.getElementById("kart-img-next").src = karts[tempNextKart].img;
             document.getElementById("kart-img").src = karts[tempKart.value].img;
       }
 
@@ -161,6 +189,20 @@ function changeStat(action, slot) {
                   }
             }
             tempWheels.value = String(wheelsID);
+
+            tempNextWheels = parseInt(tempWheels.value) + 1;
+            tempPreviousWheels = parseInt(tempWheels.value) - 1;
+
+            if (tempNextWheels >= wheels.length) {
+                  tempNextWheels = 0;
+            }
+
+            if (tempPreviousWheels < 0) {
+                  tempPreviousWheels = wheels.length - 1;
+            }
+
+            document.getElementById("wheels-img-previous").src = wheels[tempPreviousWheels].img;
+            document.getElementById("wheels-img-next").src = wheels[tempNextWheels].img;
             document.getElementById("wheels-img").src = wheels[tempWheels.value].img;
       }
 
@@ -181,6 +223,20 @@ function changeStat(action, slot) {
                   }
             }
             tempGlider.value = String(gliderID);
+
+            tempNextGlider = parseInt(tempGlider.value) + 1;
+            tempPreviousGlider = parseInt(tempGlider.value) - 1;
+
+            if (tempNextGlider >= gliders.length) {
+                  tempNextGlider = 0;
+            }
+
+            if (tempPreviousGlider < 0) {
+                  tempPreviousGlider = gliders.length - 1;
+            }
+
+            document.getElementById("glider-img-previous").src = gliders[tempPreviousGlider].img;
+            document.getElementById("glider-img-next").src = gliders[tempNextGlider].img;
             document.getElementById("glider-img").src = gliders[tempGlider.value].img;
       }
   

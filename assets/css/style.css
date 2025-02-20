@@ -833,6 +833,26 @@ progress::-moz-progress-bar {
   width: 600px;
 }
 
+.stats-img-next {
+  clip-path: inset(0% 0 0 0);
+  mask-image: linear-gradient(to bottom, transparent 65%, black 80%);
+}
+
+.stats-img-next-2 {
+  clip-path: inset(55% 0 0 0);
+  mask-image: linear-gradient(to bottom, transparent 50%, black 75%);
+}
+
+.stats-img-previous {
+  clip-path: inset(0 0 50% 0);
+  mask-image: linear-gradient(to top, transparent 50%, black 80%);
+}
+
+.stats-img-previous-2 {
+  clip-path: inset(0 0 55% 0);
+  mask-image: linear-gradient(to top, transparent 55%, black 80%);
+}
+
 @media screen and (max-width: 1400px) {
   .progress-container {
     width: 200px;
