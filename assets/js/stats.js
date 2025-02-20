@@ -99,7 +99,6 @@ function getCharacterStats(characterID, kartID, wheelsID, gliderID) {
 }
 
 function changeStat(action, slot) {
-
       let characterID = document.getElementById("selected-character").value;
       let kartID = document.getElementById("selected-kart").value;
       let wheelsID = document.getElementById("selected-wheels").value;
