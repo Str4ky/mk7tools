@@ -134,7 +134,7 @@ table {
   border-collapse: collapse;
   margin: auto;
   padding: auto;
-  width: 400px;
+  width: 750px;
   table-layout: center;
   background-color: #ccc;
 }
@@ -853,6 +853,80 @@ progress::-moz-progress-bar {
   mask-image: linear-gradient(to top, transparent 55%, black 80%);
 }
 
+.collapsible {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #202020;
+  color: white;
+  cursor: pointer;
+  width: 50%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  transition: 0.2s;
+  z-index: 1;
+}
+
+.collapsible::after {
+  content: '🞂';
+  transform: rotate(90deg);
+  font-size: 24px;
+  color: white;
+  float: right;
+  margin-right: 24px;
+}
+
+.collapsible-active, .collapsible:hover {
+  background-color: #262626;
+}
+
+.collapsible-active::after {
+  transform: rotate(-90deg);
+}
+
+.collapsible-header {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  gap: 16px;
+}
+
+.collapsible-content {
+  max-height: 0;
+  width: 50%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #262626;
+  font-size: 16px;
+  text-align: center;
+}
+
+.collapsible-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.collapsible-content h3 {
+  float: left;
+  margin-left: 16px;
+  height: 15px;
+}
+
+.collapsible-infos {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: 36px;
+  height: 35px;
+}
+
+.collapsible-infos i:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1400px) {
   .progress-container {
     width: 200px;
@@ -871,6 +945,14 @@ progress::-moz-progress-bar {
 
   #calculator-container {
     flex-direction: column;
+  }
+
+  .collapsible, .collapsible-content {
+    width: 75%;
+  }
+
+  table {
+    width: 500px;
   }
 }
 
@@ -894,6 +976,14 @@ progress::-moz-progress-bar {
   #select-buttons {
     zoom: 0.8;
     gap: 32px;
+  }
+
+  .collapsible, .collapsible-content {
+    width: 90%;
+  }
+
+  table {
+    width: 350px;
   }
 }
 
