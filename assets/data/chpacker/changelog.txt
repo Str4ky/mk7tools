@@ -1,2 +1,1 @@
-- char_config.exe renamed to create_config.exe
-- Added a new changelog menu to see what's new
+- new special feature
