@@ -1,1 +1,4 @@
-- new special feature
+- Removed April Fool joke
+- Added support for SyncJumpVoiceAnim in the config
+- Fix a bug where the config wouldn't pu false in the
+thankYouAnim if it was disabled
