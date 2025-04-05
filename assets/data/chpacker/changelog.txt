@@ -1,2 +1,2 @@
-- Added support for the 1 px offset of menu & race ui images
+- Added support for 1px offset of menu & race ui images
 (Imported CHPACK that already has an offset can get their offset disabled. If a CHPACK that had an offset and you decide to do nothing it will keep the offset but if you do disable this offset, it will be REMOVED so be careful when messing aroud with offsets.)
