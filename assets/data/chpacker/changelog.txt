@@ -1,2 +1,5 @@
-- Added support for 1px offset of menu & race ui img
-(Imported CHPACK that already has an offset can get their offset disabled. If a CHPACK that had an offset and you decide to do nothing it will keep the offset but if you do disable this offset, it will be REMOVED so be careful when messing aroud with offsets.)
+This is a recap of all major changes:
+- Added support for the jump voice sync setting for the config.ini
+- Added support for the 1 pixel offset of menu & race rank ui images
+- Every non major input and checkbox for the config are in a new "extras" menu
+- Added a button to set the glider's custom colors to one from a chosen character
