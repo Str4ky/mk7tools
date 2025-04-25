@@ -1,1 +1,6 @@
-- Fixed a placeholder text could make credits not formatted properly by users
+- Fixed a bug related to cleaning files when opening CHPACKer
+- Improve the check for if the rank images has the 1 pixel offset
+- Added a new feature that warns you when closing the software
+- Added a new settings page accessible from the main menu
+- You can now disable the updates check in the settings
+- You can now disable the new warn window in the settings
