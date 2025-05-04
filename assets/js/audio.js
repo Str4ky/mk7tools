@@ -879,7 +879,7 @@ const voicelines = {
         { id: "09", name: "HQ_ATK_END" },
         { id: "10", name: "HQ_DSH2" },
         { id: "11", name: "HQ_DSH5" },
-        { id: "12", name: "SH_END" },
+        { id: "12", name: "HQ_DSH_END" },
         { id: "13", name: "HQ_START_GLIDE" },
         { id: "14", name: "HQ_START_GLIDE2" },
         { id: "15", name: "HQ_JP_ACT_S" },
