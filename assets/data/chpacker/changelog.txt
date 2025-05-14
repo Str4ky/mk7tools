@@ -1,7 +1,1 @@
-- Fixed a bug related to cleaning files when opening CHPACKer
-- Fixed a bug related to importing chpack (not setting IDs, only character names)
-- Improve the check for if the rank images has the 1 pixel offset
-- Added a new feature that warns you when closing the software
-- You can now disable the updates check & the new warn window in a new settings page
-- You can now choose to keep the current custom kart color when importing a chpack
-- You can now retrieve karts color from a chosen character (like for the glider)
+- Fixed a bug related to custom karts color when importing a CHPACK
