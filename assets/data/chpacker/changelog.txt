@@ -1,1 +1,2 @@
 - Fixed a bug related to custom karts color when importing a CHPACK
+- Added a new setting for checking if any updates are available
