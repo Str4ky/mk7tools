@@ -1,4 +1,1 @@
-- Fixed a bug related to custom karts color when importing a CHPACK
-- Added a new setting for checking if any updates are available
-- Added the "Store Full File Hash" feature from CTGP-7's latest version
-(any CHPACK converted will now have this enabled by default)
+- Fixed a bug related to importing a chpack
