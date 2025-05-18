@@ -621,8 +621,8 @@ table th {
 .tools {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  position: relative;
+  justify-content: center;
+  column-gap: 76px;
 }
 
 .tool {
