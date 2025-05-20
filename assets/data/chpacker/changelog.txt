@@ -1,1 +1,1 @@
-- Fixed a bug related to importing a chpack
+- Added support for Discord Rich Presence
