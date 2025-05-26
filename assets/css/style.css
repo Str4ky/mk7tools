@@ -43,7 +43,7 @@ a {
 }
 
 .red:hover {
-  background-color: #af1919;
+  background-color: #b82929;
 }
 
 .blue {
@@ -72,7 +72,7 @@ a {
     display: flex;
 }
 
-.tools-buttons .download {
+.tools-buttons .btn-tools {
     margin-left: 16px;
     margin-right: 16px;
 }
@@ -657,18 +657,13 @@ table th {
   margin-right: 20px;
 }
 
-.download {
+.btn-tools {
   display: block;
-  background-color: #2f8649;
   width: 50%;
   padding: 12px;
   border-radius: 12px;
   transition: 0.2s;
   text-decoration: none;
-}
-
-.download:hover {
-  background-color: #3aa059;
 }
 
 .blank {
