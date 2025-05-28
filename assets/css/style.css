@@ -780,7 +780,7 @@ table th {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 96%;
   display: flex;
   justify-content: space-between;
 }
@@ -798,7 +798,8 @@ table th {
 progress {
   border-radius: 0px;
   background-color: #313031;
-  border: solid #4a4d4a 2px;
+  border-top: solid #4a4d4a 2px;
+  border-left: solid #4a4d4a 2px;
   outline: solid white 2px;
   width: 100%;
   height: 18px;
