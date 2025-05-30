@@ -1,1 +1,1 @@
-- Added support for Discord Rich Presence
+- Fucking typo thingy
