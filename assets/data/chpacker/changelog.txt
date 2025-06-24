@@ -1,1 +1,2 @@
-- Fucking typo thingy
+- Added log function to see what could cause errors
+(this will created a latest.log file upon generating a CHPACK)
