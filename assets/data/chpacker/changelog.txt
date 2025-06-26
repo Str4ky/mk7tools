@@ -1,2 +1,3 @@
-- Added log function to see what could cause errors
-(this will created a latest.log file upon generating a CHPACK)
+- Added a resize images function to resize UI images for you
+(This will be uncheck by default even if you import a CHPACK)
+- Fix a bug with the back function on the UI screen
