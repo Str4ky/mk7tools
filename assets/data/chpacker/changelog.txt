@@ -1,3 +1,1 @@
-- Added a resize images function to resize UI images for you
-(This will be uncheck by default even if you import a CHPACK)
-- Fix a bug with the back function on the UI screen
+- Change a command to fix a compatibility issue
