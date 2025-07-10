@@ -1,1 +1,1 @@
-- Change a command to fix a compatibility issue
+- Fixed a BIG issue related to CHPACK saving
