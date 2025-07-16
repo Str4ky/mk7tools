@@ -1,2 +1,2 @@
-- Fixed a BIG issue related to CHPACK saving
-- Fixed an issue related to getting gliderColors.ips colors
+- Fixed a BIG issue related to emblem LOD when
+auto resizing is disabled
