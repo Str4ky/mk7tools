@@ -923,6 +923,33 @@ progress::-moz-progress-bar {
   cursor: pointer;
 }
 
+.logo {
+  max-width: 100%;
+}
+
+.upload {
+  position: relative;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.upload input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.upload .button {
+  position: relative;
+  z-index: 0;
+  display: block;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 1400px) {
   .progress-container {
     width: 200px;

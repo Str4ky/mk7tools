@@ -1,2 +1,2 @@
-- Fixed a BIG issue related to emblem LOD when
-auto resizing is disabled
+- Changed how I retrieve CHPACKer's version for updates check
+- Added a new report feature in the settings

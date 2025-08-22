@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mario Kart 7 Tools</title>
+<meta content="Mario Kart 7 Tools" property="og:title">
+<meta content="Tools to help you mod Mario Kart 7/CTGP-7" property="og:description">
+<meta content="" property="og:url">
+<meta content="https://str4ky.github.io/mk7tools/assets/img/favicon.png" property="og:image">
+<meta content="#aa0404" data-react-helmet="true" name="theme-color">
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<link href="..\..\assets\css\style.css" rel="stylesheet" type="text/css">
+<link rel=icon type=image/png href=..\..\assets\img\favicon.png />
+</head>
+<body>
+    <center>
+            <img src="..\..\assets\img\chpacker.png" alt="CHPACKer logo" class="logo"><br><br>
+            <div id="form" style="display: block;">
+                <form>
+                    <h3><u>Your username</u>:</h3>
+                    <input type="text" placeholder="Enter your username..." style="width: 300px;" required><br><br>
+                    <h3><u>A short brief about your issue</u>:</h3>
+                    <input type="text" placeholder="Enter a title..." style="width: 300px;" required><br><br>
+                    <h3><u>The details of your issue</u>:</h3>
+                    <textarea placeholder="Enter a description..." style="width: 340px; height: 100px;" required></textarea><br><br>
+                    <h3><u>The latest.log file (optional)</u>:</h3>
+                    <div class="upload">
+                        <a href="#" class="button red"><i class="fa-solid fa-upload"></i> Upload</a>
+                        <input type="file" id="file" accept=".log" /><br><br><br>
+                    </div>
+                    <button type="submit" class="button red"><i class="fa-solid fa-paper-plane"></i> Send report</button>
+                </form>
+            </div>
+            <div id="success" style="display: none;">
+                <br><br>
+                <h3>Report sent successfully!</h3><br>
+                <a  href="../../" class="button red"><i class="fa-solid fa-reply"></i> Go back to home page</a>
+            </div>
+    </center>
+</body>
+</html>
+
+<script src="../../assets/js/send_report.js"></script>
+
+<script>
+    const fileInput = document.querySelector('input[type="file"]');
+    const filePath = document.querySelector('.upload a');
+
+    fileInput.addEventListener('change', (event) => {
+        const file = event.target.files[0].name;
+        filePath.textContent = file;
+    });
+</script>
