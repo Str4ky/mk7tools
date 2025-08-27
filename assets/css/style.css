@@ -17,6 +17,10 @@ a {
   color: white;
 }
 
+.logo-title {
+  width: 700px;
+}
+
 .title {
   display: flex;
   justify-content: center;
@@ -977,6 +981,10 @@ progress::-moz-progress-bar {
   table {
     width: 500px;
   }
+
+  .logo-title {
+    width: 400px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -1026,5 +1034,9 @@ progress::-moz-progress-bar {
   #select-buttons {
     zoom: 0.7;
     gap: 32px;
+  }
+
+  .logo-title {
+    width: 300px;
   }
 }
