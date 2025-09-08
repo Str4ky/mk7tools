@@ -1,3 +1,2 @@
-- Changed how I retrieve CHPACKer's version for updates check
-- Added a new report feature in the settings
-- Fix CHPACK packing menu where commands were not all outputed to log file
+- Fixed a graphical bug when clicking on "Extra"
+in the infos page for a character
