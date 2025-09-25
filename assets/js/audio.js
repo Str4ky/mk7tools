@@ -392,7 +392,7 @@ const voicelines = {
       ]
     },
     {
-      category: "94 DK GOL (Goal voicelines)",
+      category: "93 DK GOL (Goal voicelines)",
       prefix: "goal",
       lines: [
         { id: "00", name: "DK_GOL_TOP" },

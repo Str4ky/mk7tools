@@ -1,2 +1,1 @@
-- Fixed a graphical bug when clicking on "Extra"
-in the infos page for a character
+- Fixed a bug when generating an opened CHPACK
