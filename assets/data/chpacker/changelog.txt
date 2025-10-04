@@ -1,1 +1,1 @@
-- Fixed a bug when generating an opened CHPACK
+- Fixed again the same bug when generating any CHPACK
