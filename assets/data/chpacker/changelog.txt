@@ -1,1 +1,1 @@
-- Fixed again the same bug when generating any CHPACK
+- Fucking fixed again the same bug when generating any CHPACK
