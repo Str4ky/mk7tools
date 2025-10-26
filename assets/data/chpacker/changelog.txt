@@ -1,3 +1,2 @@
-- Fucking fixed again the same bug when generating any CHPACK
-- Fixed a bug where the keep custom kart colors checks when editing
-  an existing CHPACK wouldn't work
+- Fixed a bug where the group and achievements of an opened
+CHPACK wouldn't be applied to it's new generate version
