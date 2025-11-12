@@ -1,2 +1,7 @@
-- Fixed a bug where the group and achievements of an opened
-CHPACK wouldn't be applied to it's new generate version
+- You can now drag and drop a CHPACK from the menu to open it
+- You can now drag and drop folder into the Audio or Models
+text field
+- You can now drag and drop images for UI onto their preview
+boxes
+- You can now define a color for a kart part from another kart
+part's color with right click
