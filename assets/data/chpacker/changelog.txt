@@ -1,5 +1,2 @@
-- You can now drag and drop a CHPACK from the menu to open it
-- You can now drag and drop folder into the Audio or Models text field
-- You can now drag and drop images for UI onto their preview boxes
-- You can now define a color for a kart part from another kart part's color
-with right click
+- Add default color values for the new right click menu
+- Fix a bug where glider colors for the new right click menu were wrong
