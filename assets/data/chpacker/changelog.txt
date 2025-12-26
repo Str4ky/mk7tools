@@ -1,2 +1,1 @@
-- Add default color values for the new right click menu
-- Fix a bug where glider colors for the new right click menu were wrong
+- Fix the title of the infos's page showing a fucking hex color
