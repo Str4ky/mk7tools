@@ -1,4 +1,4 @@
 - You can now set a color by its hex value from the right click menu
 - The issue where the program will sometimes hash some files twice
 has been hopefully finally fixed (on the hash program I check if the
-file is already hashed so it won't process it)
+name of the file is already hashed so it won't process it)
