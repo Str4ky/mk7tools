@@ -1,4 +1,4 @@
-- You can now set a color by its hex value from the right click menu
-- The issue where the program will sometimes hash some files twice
-has been hopefully finally fixed (on the hash program I check if the
-name of the file is already hashed so it won't process it)
+- Finally fix the issue where rank icons were too small compared to
+others or vanilla characters
+(I don't think opening a chpack here and saving it will fix the issue
+as it can also just use the rank icons directly from the chpack)
