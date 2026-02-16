@@ -1,4 +1,1 @@
-- Finally fix the issue where rank icons were too small compared to
-others or vanilla characters
-(I don't think opening a chpack here and saving it will fix the issue
-as it can also just use the rank icons directly from the chpack)
+- Fixed an issue regarding the new hex value feature
