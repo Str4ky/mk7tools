@@ -1,1 +1,2 @@
-- Fixed an issue regarding the new hex value feature
+- Fixed a very old issue where part of the standard kart would be
+completly black (every chpacker made character has this issue)
