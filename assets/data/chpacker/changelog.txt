@@ -1,2 +1,3 @@
-- Fixed a very old issue where part of the standard kart would be
-completly black (every chpacker made character has this issue)
+- Fixed a bug where editing a CHPACK with no emblem would add a placeholder one
+- Added a new reset button in the UI section so you can remove an emblem if you set one
+- Added a new reset button in the names section where you can reset all names fields
