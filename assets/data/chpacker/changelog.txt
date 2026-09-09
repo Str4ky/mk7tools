@@ -1,3 +1,5 @@
-- Fixed a bug where editing a CHPACK with no emblem would add a placeholder one
-- Added a new reset button in the UI section so you can remove an emblem if one set
-- Added a new reset button in the names section where you can reset all names fields
+- Fixed a bug where the config file wouldn't fully complete its creation
+due to translation issue. If this occurs, every non translated text will
+use the English version instead
+- Fixed a bug where pressing "OK" in the modal when entering custom hex color
+wouldn't do anything and just close the modal without setting any color
