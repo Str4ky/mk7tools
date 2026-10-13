@@ -1,5 +1,2 @@
-- Fixed a bug where the config file wouldn't fully complete its creation
-due to translation issue. If this occurs, every non translated text will
-use the English version instead
-- Fixed a bug where pressing "OK" in the modal when entering custom hex color
-wouldn't do anything and just close the modal without setting any color
+- I LEFT A FUCKING VARIABLE VISIBLE ON SCREEN OH DEAR FUCKING GO- (you didn't see that)
+- Fixed an image where part of the secondary color was replace by the primary one
